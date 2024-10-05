@@ -860,7 +860,10 @@
           }
         },
         {
-          "name": "TrackSegment"
+          "name": "TrackSegment",
+          "config": {
+            "next": []
+          }
         }
       ],
       "children": []

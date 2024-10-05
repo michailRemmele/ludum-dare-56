@@ -9,4 +9,7 @@ export const trackSegment: WidgetSchema = {
       type: 'multitext',
     },
   ],
+  getInitialState: () => ({
+    next: [],
+  }),
 };
