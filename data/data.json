@@ -78,6 +78,10 @@
           "options": {
             "filterComponents": []
           }
+        },
+        {
+          "name": "TrackSystem",
+          "options": {}
         }
       ],
       "levelId": "814bb481-8226-4f26-8df4-7963417938ec"
@@ -191,6 +195,32 @@
                 "rotation": 0,
                 "scaleX": 1,
                 "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "71ffcdb9-1a66-472a-a16c-2998e94e28ae",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 6",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -228,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "index": 5
               }
             }
           ],
