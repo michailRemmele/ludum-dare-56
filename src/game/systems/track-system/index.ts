@@ -1,4 +1,4 @@
-import { MathOps, System, Transform, UpdateOptions } from "remiz";
+import { Actor, MathOps, System, Transform, UpdateOptions } from "remiz";
 import { ActorCollection, Scene, SystemOptions } from "remiz";
 import { RemoveActor, RemoveActorEvent } from "remiz/events";
 
@@ -10,6 +10,7 @@ export class TrackSystem extends System {
   private segmentsCollection: ActorCollection;
   private movementCollection: ActorCollection;
   private angles: Record<string, number>;
+  private nextSegment: string = "";
 
   constructor(options: SystemOptions) {
     super();
@@ -19,6 +20,8 @@ export class TrackSystem extends System {
     this.segmentsCollection = new ActorCollection(options.scene, {
       components: [TrackSegment],
     });
+
+    this.segmentsCollection.sort((a: Actor, b: Actor) => a.name.localeCompare(b.name));
 
     this.movementCollection = new ActorCollection(options.scene, {
       components: [Movement],
@@ -39,48 +42,52 @@ export class TrackSystem extends System {
   }
 
   update(options: UpdateOptions): void {
-    // TODO: sort by index
-    const segmentsOffsets: Pick<Transform, "offsetX" | "offsetY">[] = [];
+    const segments: (Pick<Transform, "offsetX" | "offsetY"> & Pick<TrackSegment, 'next'>)[] = [];
 
     this.segmentsCollection.forEach((actor) => {
+      const { next } = actor.getComponent(TrackSegment);
       const { offsetX, offsetY } = actor.getComponent(Transform);
 
-      segmentsOffsets.push({ offsetX, offsetY });
+      segments.push({ offsetX, offsetY, next });
     });
 
     this.movementCollection.forEach((actor) => {
       const transform = actor.getComponent(Transform);
-      const intersectedSegmentIndex = segmentsOffsets.findIndex(
+
+      // Ищем пересечения центов
+      const intersectedSegment = segments.find(
         (segment) =>
-          segment.offsetX === transform.offsetX &&
-          segment.offsetY === transform.offsetY
+          Math.abs(segment.offsetX - transform.offsetX) < 1 &&
+          Math.abs(segment.offsetY - transform.offsetY) < 1
       );
-      const intersectedSegment = segmentsOffsets[intersectedSegmentIndex];
 
       if (intersectedSegment) {
-        const nextSegment = segmentsOffsets[intersectedSegmentIndex + 1];
+        const nextSegment = this.segmentsCollection.getById(intersectedSegment.next);
 
         if (!nextSegment) {
           return;
         }
 
+        const { offsetX, offsetY } = nextSegment.getComponent(Transform);
+
         const angle =
           MathOps.radToDeg(
             MathOps.getAngleBetweenTwoPoints(
               intersectedSegment.offsetX,
-              nextSegment.offsetX,
+              offsetX,
               intersectedSegment.offsetY,
-              nextSegment.offsetY
+              offsetY
             )
           ) - 180;
         this.angles[actor.id] = angle;
 
         actor.dispatchEvent(EventType.Movement, { angle });
-      } else {
-        actor.dispatchEvent(EventType.Movement, {
-          angle: this.angles[actor.id],
-        });
+        return;
       }
+
+      actor.dispatchEvent(EventType.Movement, {
+        angle: this.angles[actor.id],
+      });
     });
   }
 }

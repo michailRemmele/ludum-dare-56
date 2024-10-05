@@ -1,21 +1,21 @@
-import { Component } from 'remiz';
+import { Component } from "remiz";
 
 interface TrackSegmentConfig {
-  index: number
+  next: string;
 }
 
 export class TrackSegment extends Component {
-  index: number;
+  next: string;
 
   constructor(config: TrackSegmentConfig) {
     super();
 
-    this.index = config.index;
+    this.next = config?.next;
   }
 
   clone(): TrackSegment {
-    return new TrackSegment({ index: this.index });
+    return new TrackSegment({ next: this.next });
   }
 }
 
-TrackSegment.componentName = 'TrackSegment';
+TrackSegment.componentName = "TrackSegment";
