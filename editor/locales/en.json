@@ -6,18 +6,34 @@
   "components.viewDirection.x.title": "X",
   "components.viewDirection.y.title": "Y",
 
-  "components.snakeSegment.title": "Snake Segment",
-  "components.snakeSegment.index.title": "Index",
+  "components.weapon.title": "Weapon",
+  "components.weapon.type.title": "Type",
+  "components.weapon.types.melee.title": "Melee",
+  "components.weapon.types.range.title": "Range",
+  "components.weapon.cooldown.title": "Cooldown",
+  "components.weapon.properties.damage.title": "Damage",
+  "components.weapon.properties.range.title": "Range",
+  "components.weapon.properties.projectileSpeed.title": "Projectile Speed",
+  "components.weapon.properties.projectileRadius.title": "Projectile Radius",
+  "components.weapon.properties.projectileModel.title": "Projectile Model",
+
+  "components.health.title": "Health",
+  "components.health.points.title": "Points",
+
+  "components.hitBox.title": "Hit Box",
+
+  "components.team.title": "Team",
+  "components.team.index.title": "Index",
 
   "components.trackSegment.title": "Track Segment",
   "components.trackSegment.index.title": "Index",
 
-  "components.orb.title": "Orb",
-
-  "components.score.title": "Score",
+  "components.money.title": "Money",
 
   "systems.movementSystem.title": "Movement System",
   "systems.scenarioSystem.title": "Scenario System",
+  "systems.fightSystem.title": "Fight System",
+  "systems.reaper.title": "Reaper",
 
   "resources.scriptSystem.spawnerScript.sizeX.title": "Size X",
   "resources.scriptSystem.spawnerScript.sizeY.title": "Size Y"

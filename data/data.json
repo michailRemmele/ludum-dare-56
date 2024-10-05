@@ -54,6 +54,18 @@
           "options": {}
         },
         {
+          "name": "FightSystem",
+          "options": {}
+        },
+        {
+          "name": "Reaper",
+          "options": {}
+        },
+        {
+          "name": "Animator",
+          "options": {}
+        },
+        {
           "name": "SpriteRenderer",
           "options": {
             "windowNodeId": "root",
@@ -339,6 +351,66 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "ba75e16c-30a8-4425-b6ac-8a4075bd1e62",
+          "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
+          "fromTemplate": true,
+          "name": "Tower",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3c0eacad-c8f0-443b-b7f8-fd6e40104df8",
+          "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
+          "fromTemplate": true,
+          "name": "Tower 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a3c163fa-4f6c-406e-93a5-50f65a283c8e",
+          "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
+          "fromTemplate": true,
+          "name": "Tower 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
         }
       ]
     }
@@ -420,9 +492,125 @@
             "x": 0,
             "y": 0
           }
+        },
+        {
+          "name": "Team",
+          "config": {
+            "index": 1
+          }
+        },
+        {
+          "name": "Health",
+          "config": {
+            "points": 100
+          }
+        },
+        {
+          "name": "Animatable",
+          "config": {
+            "initialState": "1c0ba8c1-d2d2-4619-8409-70c649292ab2",
+            "states": [
+              {
+                "id": "1c0ba8c1-d2d2-4619-8409-70c649292ab2",
+                "name": "Idle",
+                "type": "individual",
+                "speed": 1,
+                "timeline": {
+                  "frames": [
+                    {
+                      "id": "2e25f8b5-03db-489f-82c4-cc1d19a594a6",
+                      "fields": [
+                        {
+                          "id": "3f03e974-8bb9-43a1-8dba-0184f376c047",
+                          "name": "components.Sprite.currentFrame",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "looped": false
+                },
+                "transitions": [
+                  {
+                    "id": "12e52558-aac8-412b-b601-90174813287a",
+                    "state": "f37b563d-f51c-40d7-ab80-3e907d322816",
+                    "time": 0,
+                    "conditions": [
+                      {
+                        "id": "ec071914-a90e-44a3-994d-add72fe47568",
+                        "type": "event",
+                        "props": {
+                          "eventType": "Kill"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f37b563d-f51c-40d7-ab80-3e907d322816",
+                "name": "Death",
+                "type": "individual",
+                "speed": 1,
+                "timeline": {
+                  "frames": [
+                    {
+                      "id": "a9adf487-9d64-4cf2-99d5-8e43f177e77c",
+                      "fields": [
+                        {
+                          "id": "9c61872a-0426-4bbb-b772-e6bf797f04d2",
+                          "name": "components.Sprite.disabled",
+                          "type": "boolean",
+                          "value": true
+                        }
+                      ]
+                    }
+                  ],
+                  "looped": false
+                },
+                "transitions": []
+              }
+            ]
+          }
         }
       ],
-      "children": []
+      "children": [
+        {
+          "id": "8cac8689-4f1c-43f4-95b9-5d1bde358d00",
+          "name": "Hit Box",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "HitBox",
+              "config": {}
+            },
+            {
+              "name": "ColliderContainer",
+              "config": {
+                "type": "boxCollider",
+                "collider": {
+                  "sizeX": 24,
+                  "sizeY": 24,
+                  "centerX": 0,
+                  "centerY": 0
+                }
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
     },
     {
       "id": "f14f1694-7865-4783-9b21-774bde2ad9b3",
@@ -453,7 +641,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "",
+            "sortingLayer": "units",
             "fit": "stretch",
             "material": {
               "type": "basic",
@@ -584,6 +772,265 @@
           "name": "TrackSegment",
           "config": {
             "index": 0
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "5d2a2389-144f-4bc9-abf7-2fcdd8f77b5d",
+      "name": "Melee Hit",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "ColliderContainer",
+          "config": {
+            "type": "boxCollider",
+            "collider": {
+              "sizeX": 24,
+              "sizeY": 24,
+              "centerX": 0,
+              "centerY": 0
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "b5ed0a30-1f38-460e-8582-46a776de7afb",
+      "name": "Tower",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Weapon",
+          "config": {
+            "type": "range",
+            "cooldown": 500,
+            "properties": {
+              "damage": 50,
+              "range": 60,
+              "projectileSpeed": 100,
+              "projectileRadius": 6,
+              "projectileModel": "118dc229-ec6f-44d1-8721-077df5001a2b"
+            }
+          }
+        },
+        {
+          "name": "ColliderContainer",
+          "config": {
+            "type": "circleCollider",
+            "collider": {
+              "centerX": 0,
+              "centerY": 0,
+              "radius": 60
+            }
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "units",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#cccc99",
+                "opacity": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "ScriptBundle",
+          "config": {
+            "scripts": [
+              {
+                "id": "c39c6831-b48e-48f9-bb01-c96b34d6df13",
+                "name": "TowerScript",
+                "options": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "ViewDirection",
+          "config": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "Team",
+          "config": {
+            "index": 0
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "118dc229-ec6f-44d1-8721-077df5001a2b",
+      "name": "Projectile",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "ColliderContainer",
+          "config": {
+            "type": "circleCollider",
+            "collider": {
+              "centerX": 0,
+              "centerY": 0,
+              "radius": 24
+            }
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "",
+            "width": 12,
+            "height": 12,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "units",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "RigidBody",
+          "config": {
+            "type": "dynamic",
+            "mass": 1,
+            "useGravity": false,
+            "isPermeable": false,
+            "ghost": true,
+            "drag": 0
+          }
+        },
+        {
+          "name": "Animatable",
+          "config": {
+            "initialState": "22429875-6b28-4f62-8377-0469c33cdb60",
+            "states": [
+              {
+                "id": "22429875-6b28-4f62-8377-0469c33cdb60",
+                "name": "Idle",
+                "type": "individual",
+                "speed": 1,
+                "timeline": {
+                  "frames": [
+                    {
+                      "id": "cdf8f10d-bdea-4f44-920d-c6ece1861de3",
+                      "fields": [
+                        {
+                          "id": "a90f32c4-9504-4481-a3c9-3b422624c9ac",
+                          "name": "components.Sprite.currentFrame",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "looped": false
+                },
+                "transitions": [
+                  {
+                    "id": "5730e445-4c6d-4885-89fb-3c36edd66431",
+                    "state": "a8bf9078-2fbb-4b65-9954-b9956cdc3320",
+                    "time": 0,
+                    "conditions": [
+                      {
+                        "id": "8e14d842-c7c0-42b3-80a4-2db06cd1f82f",
+                        "type": "event",
+                        "props": {
+                          "eventType": "Kill"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a8bf9078-2fbb-4b65-9954-b9956cdc3320",
+                "name": "Death",
+                "type": "individual",
+                "speed": 1,
+                "timeline": {
+                  "frames": [
+                    {
+                      "id": "fe31f2cb-461f-48bc-b65c-3ad61921886c",
+                      "fields": [
+                        {
+                          "id": "016ec7e0-80c7-4155-8cff-c9d21f4fc45c",
+                          "name": "components.Sprite.disabled",
+                          "type": "boolean",
+                          "value": true
+                        }
+                      ]
+                    }
+                  ],
+                  "looped": false
+                },
+                "transitions": []
+              }
+            ]
           }
         }
       ],

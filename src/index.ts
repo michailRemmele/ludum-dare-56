@@ -9,7 +9,9 @@ import {
   ScriptSystem,
   UiBridge,
   GameStatsMeter,
+  Animator,
 
+  Animatable,
   Camera,
   KeyboardControl,
   ColliderContainer,
@@ -39,6 +41,7 @@ const engine = new Engine({
     UiBridge,
     ScriptSystem,
     GameStatsMeter,
+    Animator,
     ...(!touchDevice
       ? [
         KeyboardInputSystem,
@@ -49,6 +52,7 @@ const engine = new Engine({
     ...Object.values(GameSystems),
   ],
   components: [
+    Animatable,
     Camera,
     KeyboardControl,
     ColliderContainer,
