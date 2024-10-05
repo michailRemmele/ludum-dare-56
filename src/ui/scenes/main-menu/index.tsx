@@ -22,7 +22,7 @@ export const MainMenu: FC = () => {
 
   return (
     <div className="main-menu">
-      <h1>Snake</h1>
+      <h1>Ludum Dare 56</h1>
       <Button onClick={handlePlay}>Play</Button>
     </div>
   );

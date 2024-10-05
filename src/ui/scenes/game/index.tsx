@@ -14,11 +14,9 @@ import {
 import { GAME_ID } from '../../../consts/scenes';
 import * as EventType from '../../../game/events';
 import type { GameOverEvent } from '../../../game/events';
-import { isTouchDevice } from '../../../utils/is-touch-device';
 
 import {
   ScoreBar,
-  MoveControl,
 } from './components';
 import './style.css';
 
@@ -55,10 +53,6 @@ export const Game: FC = () => {
         </div>
       </header>
       {/* {process.env.NODE_ENV === 'development' && <FpsMeter />} */}
-
-      {!isGameOver && isTouchDevice() && (
-        <MoveControl className="game__move-control" />
-      )}
 
       {isGameOver && (
       <div className="game-over__overlay">

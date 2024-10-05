@@ -1,1 +1,1 @@
-export { OrbSpawner } from './orb-spawner';
+export { ScenarioSystem } from './scenario-system';

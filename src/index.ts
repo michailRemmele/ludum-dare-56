@@ -16,6 +16,7 @@ import {
   Sprite,
   Transform,
   ScriptBundle,
+  RigidBody,
 } from 'remiz';
 
 import * as GameSystems from './game/systems';
@@ -54,6 +55,7 @@ const engine = new Engine({
     Sprite,
     Transform,
     ScriptBundle,
+    RigidBody,
     ...Object.values(GameComponents),
   ],
   resources: {

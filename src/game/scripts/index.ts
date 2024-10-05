@@ -1,1 +1,1 @@
-export { PlayerScript } from './player-script';
+export { SpawnerScript } from './spawner-script';

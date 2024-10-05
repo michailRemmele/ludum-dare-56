@@ -6,5 +6,8 @@
 
   "components.score.title": "Score",
 
-  "systems.orbSpawner.title": "Orb Spawner"
+  "systems.scenarioSystem.title": "Scenario System",
+
+  "resources.scriptSystem.spawnerScript.sizeX.title": "Size X",
+  "resources.scriptSystem.spawnerScript.sizeY.title": "Size Y"
 }

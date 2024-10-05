@@ -1,15 +1,15 @@
 import { ScriptSystem } from 'remiz';
 
 import {
-  PlayerScript,
+  SpawnerScript,
 } from '../../../src/game/scripts';
 
 import {
-  playerScript,
+  spawnerScript,
 } from './script-system';
 
 export const resourcesSchema = {
   [ScriptSystem.systemName]: {
-    [PlayerScript.scriptName]: playerScript,
+    [SpawnerScript.scriptName]: spawnerScript,
   },
 };

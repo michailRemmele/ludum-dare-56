@@ -1,9 +1,9 @@
 import type { WidgetSchema } from 'remiz-editor';
 
-import { OrbSpawner } from '../../../src/game/systems';
+import { ScenarioSystem } from '../../../src/game/systems';
 
-import { orbSpawner } from './orb-spawner';
+import { scenarioSystem } from './scenario-system';
 
 export const systemsSchema: Record<string, WidgetSchema> = {
-  [OrbSpawner.systemName]: orbSpawner,
+  [ScenarioSystem.systemName]: scenarioSystem,
 };
