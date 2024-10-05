@@ -16,6 +16,7 @@ import type { GameOverEvent } from '../../../game/events';
 
 import {
   MoneyBar,
+  BaseHealthBar,
 } from './components';
 import './style.css';
 
@@ -47,6 +48,7 @@ export const Game: FC = () => {
   return (
     <div className="game">
       <header className="game__header">
+        <BaseHealthBar />
         <div className="header__left">
           <MoneyBar />
         </div>

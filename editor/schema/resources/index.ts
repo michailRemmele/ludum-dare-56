@@ -5,6 +5,7 @@ import {
   TowerScript,
   DeathTrackerScript,
   PlayerScript,
+  BaseScript,
 } from '../../../src/game/scripts';
 
 import {
@@ -12,6 +13,7 @@ import {
   towerScript,
   deathTrackerScript,
   playerScript,
+  baseScript,
 } from './script-system';
 
 export const resourcesSchema = {
@@ -20,5 +22,6 @@ export const resourcesSchema = {
     [TowerScript.scriptName]: towerScript,
     [DeathTrackerScript.scriptName]: deathTrackerScript,
     [PlayerScript.scriptName]: playerScript,
+    [BaseScript.scriptName]: baseScript,
   },
 };

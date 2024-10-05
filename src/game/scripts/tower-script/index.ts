@@ -12,6 +12,7 @@ import type {
   CollisionLeaveEvent,
 } from 'remiz/events';
 
+import { Movement } from '../../components';
 import * as EventType from '../../events';
 
 export class TowerScript extends Script {
@@ -34,6 +35,9 @@ export class TowerScript extends Script {
   }
 
   private handleMarkEnemy = (event: CollisionEnterEvent): void => {
+    if (!event.actor.getComponent(Movement)) {
+      return;
+    }
     this.enemies.push(event.actor);
   };
 
