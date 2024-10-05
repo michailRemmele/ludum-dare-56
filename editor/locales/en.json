@@ -32,6 +32,7 @@
 
   "systems.movementSystem.title": "Movement System",
   "systems.scenarioSystem.title": "Scenario System",
+  "systems.trackSystem.title": "Track System",
   "systems.fightSystem.title": "Fight System",
   "systems.reaper.title": "Reaper",
 
