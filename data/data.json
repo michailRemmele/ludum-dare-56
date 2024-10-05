@@ -62,6 +62,10 @@
           "options": {}
         },
         {
+          "name": "EffectsSystem",
+          "options": {}
+        },
+        {
           "name": "Reaper",
           "options": {}
         },
@@ -463,6 +467,26 @@
               "name": "Transform",
               "config": {
                 "offsetX": -12,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e657b757-9cbc-45e5-ae26-b49462311590",
+          "templateId": "e28dc035-850c-48cd-872c-b65ac8d6a437",
+          "fromTemplate": true,
+          "name": "Tower Freeze",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
                 "offsetY": 132,
                 "offsetZ": 0,
                 "rotation": 0,
@@ -1342,6 +1366,131 @@
                 "transitions": []
               }
             ]
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "e28dc035-850c-48cd-872c-b65ac8d6a437",
+      "name": "Tower Freeze",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Weapon",
+          "config": {
+            "type": "freeze",
+            "cooldown": 500,
+            "properties": {
+              "damage": 10,
+              "range": 60,
+              "explosionRadius": 48,
+              "explosionModel": "3dbabeaa-7135-4f8a-b3a5-fadeb096c1de",
+              "projectileSpeed": 100,
+              "projectileRadius": 6,
+              "projectileModel": "118dc229-ec6f-44d1-8721-077df5001a2b",
+              "slowFactor": 0.5
+            }
+          }
+        },
+        {
+          "name": "ColliderContainer",
+          "config": {
+            "type": "circleCollider",
+            "collider": {
+              "centerX": 0,
+              "centerY": 0,
+              "radius": 60
+            }
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "units",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#669999",
+                "opacity": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "ScriptBundle",
+          "config": {
+            "scripts": [
+              {
+                "id": "c39c6831-b48e-48f9-bb01-c96b34d6df13",
+                "name": "TowerScript",
+                "options": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "ViewDirection",
+          "config": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "Team",
+          "config": {
+            "index": 0
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "928f5cb7-263b-48dd-8e79-74b769c18dbc",
+      "name": "Freeze Effect",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Effect",
+          "config": {
+            "type": "timeLimited",
+            "applicatorOptions": {
+              "duration": 1000
+            },
+            "script": "freeze"
           }
         }
       ],

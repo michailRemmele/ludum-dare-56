@@ -1,0 +1,1 @@
+export { freezeScript } from './freeze';

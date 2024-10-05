@@ -3,21 +3,23 @@ import { Component } from 'remiz';
 import { MeleeWeapon } from './melee-weapon';
 import { RangeWeapon } from './range-weapon';
 import { AOEWeapon } from './aoe-weapon';
+import { FreezeWeapon } from './freeze-weapon';
 
 const weapons = {
   melee: MeleeWeapon,
   range: RangeWeapon,
   aoe: AOEWeapon,
+  freeze: FreezeWeapon,
 };
 
 export interface WeaponConfig {
-  type: 'melee' | 'range' | 'aoe'
+  type: 'melee' | 'range' | 'aoe' | 'freeze'
   cooldown: number
   properties: Record<string, unknown>
 }
 
 export class Weapon extends Component {
-  type: 'melee' | 'range' | 'aoe';
+  type: 'melee' | 'range' | 'aoe' | 'freeze';
   cooldown: number;
   cooldownRemaining: number;
   isActive: boolean;

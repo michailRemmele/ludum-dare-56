@@ -6,3 +6,12 @@ export { Health } from './health';
 export { HitBox } from './hit-box';
 export { Weapon } from './weapon';
 export { Team } from './team';
+export { ActiveEffects } from './active-effects';
+export { Effect } from './effect';
+
+export type {
+  EffectType,
+  DelayedEffectOptions,
+  PeriodicalEffectOptions,
+  TimeLimitedEffectOptions,
+} from './effect/types';
