@@ -127,7 +127,7 @@
                   "type": "basic",
                   "options": {
                     "blending": "normal",
-                    "color": "#336633",
+                    "color": "#99cc66",
                     "opacity": 1
                   }
                 }
@@ -472,6 +472,466 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "889d6ab7-84a3-41dd-a55f-1324e711ace1",
+          "name": "Meadow",
+          "components": [
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "bg-1.png",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "meadow",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "128e37c1-040d-451d-8d25-0527f6955b27",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 270,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "81794908-fc2a-4371-8b47-ecd7449c2d3c",
+          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+          "fromTemplate": true,
+          "name": "UI Track Corner Top",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "031aa2ff-2541-469f-8e18-5828b90c20c0",
+          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+          "fromTemplate": true,
+          "name": "UI Track Corner Top 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 90,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "9a380659-3a75-49cb-8efe-da71c135492e",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_h-2.png",
+                "width": 216,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d5670adc-6be4-46c0-b9e2-6714c828e0b4",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_v-2.png",
+                "width": 24,
+                "height": 240,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "66e80606-5a3a-4f88-8f51-baa7bad48ba5",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -72,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_h-2.png",
+                "width": 96,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "0e95c755-49e5-4d2c-8c6d-4acdc4d13a99",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "122a176f-8350-4bae-8d9e-e7f568eb7129",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_v-1.png",
+                "width": 24,
+                "height": 240,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6a8c9431-b21f-41a1-8806-a1e8b6e14abe",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road copy",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 48,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_h-2.png",
+                "width": 96,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "7667e5a8-e2ae-4acc-848d-3388632e1760",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 1 copy",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_v-1.png",
+                "width": 24,
+                "height": 264,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f4cd0806-ff1f-41f6-b066-6dba2f7dcf59",
+          "templateId": "11d0673f-ffca-4a71-9b97-1e6326eabf80",
+          "fromTemplate": true,
+          "name": "Flower Bed",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -73,
+                "offsetY": -97,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "7d7e9ebe-1c01-45ac-b8b0-00272693d573",
+          "templateId": "c6bbd954-f100-412e-9f71-99241a254073",
+          "fromTemplate": true,
+          "name": "Veg Bed",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 47,
+                "offsetY": 47,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3365e057-7131-4326-b228-bb1dc2f90c04",
+          "templateId": "12645e38-9f08-419f-8be1-9979a8cdb9ab",
+          "fromTemplate": true,
+          "name": "Hothouse",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 49,
+                "offsetY": -34,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
         }
       ]
     }
@@ -703,7 +1163,7 @@
         {
           "name": "Sprite",
           "config": {
-            "src": "",
+            "src": "house.png",
             "width": 72,
             "height": 72,
             "slice": 1,
@@ -720,7 +1180,7 @@
               "type": "basic",
               "options": {
                 "blending": "normal",
-                "color": "#996633",
+                "color": "#ffffff",
                 "opacity": 1
               }
             }
@@ -854,7 +1314,7 @@
               "options": {
                 "blending": "normal",
                 "color": "#333366",
-                "opacity": 1
+                "opacity": 0
               }
             }
           }
@@ -1128,8 +1588,8 @@
       "children": []
     },
     {
-      "id": "0bd10eee-4ad4-47f9-ba0b-88866efc932f",
-      "name": "Tower AoE",
+      "id": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+      "name": "UI Track Corner Top",
       "components": [
         {
           "name": "Transform",
@@ -1142,6 +1602,38 @@
             "scaleY": 1
           }
         },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "road/road_c-t.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "0bd10eee-4ad4-47f9-ba0b-88866efc932f",
+      "name": "Tower AoE",
+      "components": [
         {
           "name": "Weapon",
           "config": {
@@ -1346,6 +1838,269 @@
         }
       ],
       "children": []
+    },
+    {
+      "id": "9668d98d-787f-42d0-a738-12924045899b",
+      "name": "UI Track Corner Bottom",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "road/road_c-b.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+      "name": "Horizontal Road",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "road/road_h-1.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "repeat",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "9cadb85a-be47-4134-8193-76aa30de0506",
+      "name": "Vertical Road",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "road/road_v-2.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "repeat",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "11d0673f-ffca-4a71-9b97-1e6326eabf80",
+      "name": "Flower Bed",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "flowers.png",
+            "width": 94,
+            "height": 94,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "c6bbd954-f100-412e-9f71-99241a254073",
+      "name": "Veg Bed",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "vegs.png",
+            "width": 94,
+            "height": 94,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "12645e38-9f08-419f-8be1-9979a8cdb9ab",
+      "name": "Hothouse",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "glasshouse.png",
+            "width": 72,
+            "height": 72,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
     }
   ],
   "loaders": [],
@@ -1356,6 +2111,7 @@
       "type": "array",
       "value": [
         "background",
+        "meadow",
         "decorations",
         "units"
       ]
