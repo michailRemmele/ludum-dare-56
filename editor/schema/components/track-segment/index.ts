@@ -4,12 +4,9 @@ export const trackSegment: WidgetSchema = {
   title: 'components.trackSegment.title',
   fields: [
     {
-      name: 'index',
-      title: 'components.trackSegment.index.title',
-      type: 'number',
+      name: 'next',
+      title: 'components.trackSegment.next.title',
+      type: 'string',
     },
-  ],
-  getInitialState: () => ({
-    index: 0,
-  }),
+  ]
 };
