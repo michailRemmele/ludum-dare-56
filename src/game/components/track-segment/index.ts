@@ -1,4 +1,4 @@
-import { Component } from "remiz";
+import { Component } from 'remiz';
 
 interface TrackSegmentConfig {
   next: string[];
@@ -18,4 +18,4 @@ export class TrackSegment extends Component {
   }
 }
 
-TrackSegment.componentName = "TrackSegment";
+TrackSegment.componentName = 'TrackSegment';

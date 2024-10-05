@@ -33,7 +33,7 @@ export const weapon: WidgetSchema = {
       type: 'number',
       dependency: {
         name: 'type',
-        value: 'range',
+        value: 'range|aoe',
       },
     },
     {
@@ -42,7 +42,7 @@ export const weapon: WidgetSchema = {
       type: 'number',
       dependency: {
         name: 'type',
-        value: 'range',
+        value: 'range|aoe',
       },
     },
     {
@@ -52,7 +52,26 @@ export const weapon: WidgetSchema = {
       referenceId: 'models',
       dependency: {
         name: 'type',
-        value: 'range',
+        value: 'range|aoe',
+      },
+    },
+    {
+      name: 'properties.explosionRadius',
+      title: 'components.weapon.properties.explosionRadius.title',
+      type: 'number',
+      dependency: {
+        name: 'type',
+        value: 'aoe',
+      },
+    },
+    {
+      name: 'properties.explosionModel',
+      title: 'components.weapon.properties.explosionModel.title',
+      type: 'select',
+      referenceId: 'models',
+      dependency: {
+        name: 'type',
+        value: 'aoe',
       },
     },
   ],
@@ -66,6 +85,10 @@ export const weapon: WidgetSchema = {
         {
           title: 'components.weapon.types.range.title',
           value: 'range',
+        },
+        {
+          title: 'components.weapon.types.aoe.title',
+          value: 'aoe',
         },
       ],
     },

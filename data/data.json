@@ -434,15 +434,15 @@
           "children": []
         },
         {
-          "id": "3c0eacad-c8f0-443b-b7f8-fd6e40104df8",
+          "id": "a3c163fa-4f6c-406e-93a5-50f65a283c8e",
           "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
           "fromTemplate": true,
-          "name": "Tower 1",
+          "name": "Tower 2",
           "components": [
             {
               "name": "Transform",
               "config": {
-                "offsetX": -12,
+                "offsetX": 108,
                 "offsetY": 132,
                 "offsetZ": 0,
                 "rotation": 0,
@@ -454,15 +454,15 @@
           "children": []
         },
         {
-          "id": "a3c163fa-4f6c-406e-93a5-50f65a283c8e",
-          "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
+          "id": "78bc683e-f359-4b28-a566-3b9c233c5171",
+          "templateId": "0bd10eee-4ad4-47f9-ba0b-88866efc932f",
           "fromTemplate": true,
-          "name": "Tower 2",
+          "name": "Tower (explosive)",
           "components": [
             {
               "name": "Transform",
               "config": {
-                "offsetX": 108,
+                "offsetX": -12,
                 "offsetY": 132,
                 "offsetZ": 0,
                 "rotation": 0,
@@ -563,7 +563,7 @@
         {
           "name": "Health",
           "config": {
-            "points": 100
+            "points": 200
           }
         },
         {
@@ -916,7 +916,7 @@
             "type": "range",
             "cooldown": 500,
             "properties": {
-              "damage": 0,
+              "damage": 50,
               "range": 60,
               "projectileSpeed": 100,
               "projectileRadius": 6,
@@ -1107,6 +1107,226 @@
                       "fields": [
                         {
                           "id": "016ec7e0-80c7-4155-8cff-c9d21f4fc45c",
+                          "name": "components.Sprite.disabled",
+                          "type": "boolean",
+                          "value": true
+                        }
+                      ]
+                    }
+                  ],
+                  "looped": false
+                },
+                "transitions": []
+              }
+            ]
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "0bd10eee-4ad4-47f9-ba0b-88866efc932f",
+      "name": "Tower AoE",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Weapon",
+          "config": {
+            "type": "aoe",
+            "cooldown": 500,
+            "properties": {
+              "damage": 25,
+              "range": 60,
+              "explosionRadius": 48,
+              "explosionModel": "3dbabeaa-7135-4f8a-b3a5-fadeb096c1de",
+              "projectileSpeed": 100,
+              "projectileRadius": 6,
+              "projectileModel": "118dc229-ec6f-44d1-8721-077df5001a2b"
+            }
+          }
+        },
+        {
+          "name": "ColliderContainer",
+          "config": {
+            "type": "circleCollider",
+            "collider": {
+              "centerX": 0,
+              "centerY": 0,
+              "radius": 60
+            }
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "units",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#660033",
+                "opacity": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "ScriptBundle",
+          "config": {
+            "scripts": [
+              {
+                "id": "c39c6831-b48e-48f9-bb01-c96b34d6df13",
+                "name": "TowerScript",
+                "options": {}
+              }
+            ]
+          }
+        },
+        {
+          "name": "ViewDirection",
+          "config": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "Team",
+          "config": {
+            "index": 0
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "3dbabeaa-7135-4f8a-b3a5-fadeb096c1de",
+      "name": "Explosion",
+      "components": [
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "",
+            "width": 96,
+            "height": 96,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "units",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "ColliderContainer",
+          "config": {
+            "type": "circleCollider",
+            "collider": {
+              "centerX": 0,
+              "centerY": 0,
+              "radius": 48
+            }
+          }
+        },
+        {
+          "name": "Animatable",
+          "config": {
+            "initialState": "caf1e25c-493c-47f7-bb2d-e69ad360416f",
+            "states": [
+              {
+                "id": "caf1e25c-493c-47f7-bb2d-e69ad360416f",
+                "name": "Idle",
+                "type": "individual",
+                "speed": 1,
+                "timeline": {
+                  "frames": [
+                    {
+                      "id": "d4830788-be6b-4415-8b97-27ef82b22579",
+                      "fields": [
+                        {
+                          "id": "2d136170-fef8-4445-800b-91a3a6674e6d",
+                          "name": "components.Sprite.currentFrame",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "looped": false
+                },
+                "transitions": [
+                  {
+                    "id": "6e8c536c-b968-49a2-8d91-f8556052c389",
+                    "state": "f3131291-a4d7-4965-8048-9a538888d375",
+                    "time": 0,
+                    "conditions": [
+                      {
+                        "id": "cd252b60-c850-44d4-aee5-2838febec60a",
+                        "type": "event",
+                        "props": {
+                          "eventType": "Kill"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f3131291-a4d7-4965-8048-9a538888d375",
+                "name": "Death",
+                "type": "individual",
+                "speed": 1,
+                "timeline": {
+                  "frames": [
+                    {
+                      "id": "d4830788-be6b-4415-8b97-27ef82b22579",
+                      "fields": [
+                        {
+                          "id": "2d136170-fef8-4445-800b-91a3a6674e6d",
                           "name": "components.Sprite.disabled",
                           "type": "boolean",
                           "value": true

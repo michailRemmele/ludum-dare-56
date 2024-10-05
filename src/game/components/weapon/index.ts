@@ -2,24 +2,26 @@ import { Component } from 'remiz';
 
 import { MeleeWeapon } from './melee-weapon';
 import { RangeWeapon } from './range-weapon';
+import { AOEWeapon } from './aoe-weapon';
 
 const weapons = {
   melee: MeleeWeapon,
   range: RangeWeapon,
+  aoe: AOEWeapon,
 };
 
 export interface WeaponConfig {
-  type: 'melee' | 'range'
+  type: 'melee' | 'range' | 'aoe'
   cooldown: number
   properties: Record<string, unknown>
 }
 
 export class Weapon extends Component {
-  type: 'melee' | 'range';
+  type: 'melee' | 'range' | 'aoe';
   cooldown: number;
   cooldownRemaining: number;
   isActive: boolean;
-  properties: MeleeWeapon | RangeWeapon;
+  properties: MeleeWeapon | RangeWeapon | AOEWeapon;
 
   constructor(config: WeaponConfig) {
     super();

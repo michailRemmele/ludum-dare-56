@@ -8,5 +8,5 @@ export const trackSegment: WidgetSchema = {
       title: 'components.trackSegment.next.title',
       type: 'multitext',
     },
-  ]
+  ],
 };
