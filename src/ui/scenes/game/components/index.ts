@@ -1,1 +1,1 @@
-export { ScoreBar } from './score-bar';
+export { MoneyBar } from './money-bar';

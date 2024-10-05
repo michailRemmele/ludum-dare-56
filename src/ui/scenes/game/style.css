@@ -61,10 +61,10 @@
   margin: auto;
   padding: 24px;
   background-color: rgba(32, 32, 32, 0.25);
-  border: 4px solid #070004;
+  border: 4px solid white;
 }
 
 .game-over__title {
-  color: #070004;
+  color: white;
   margin-top: 0;
 }

@@ -1,6 +1,6 @@
 import { Component } from 'remiz';
 
-export class Score extends Component {
+export class Money extends Component {
   value: number;
 
   constructor() {
@@ -9,9 +9,9 @@ export class Score extends Component {
     this.value = 0;
   }
 
-  clone(): Score {
-    return new Score();
+  clone(): Money {
+    return new Money();
   }
 }
 
-Score.componentName = 'Score';
+Money.componentName = 'Money';

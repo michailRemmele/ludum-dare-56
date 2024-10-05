@@ -8,7 +8,6 @@ import { LoadScene } from 'remiz/events';
 
 import { EngineContext } from '../../providers';
 import {
-  // FpsMeter,
   Button,
 } from '../../components';
 import { GAME_ID } from '../../../consts/scenes';
@@ -16,7 +15,7 @@ import * as EventType from '../../../game/events';
 import type { GameOverEvent } from '../../../game/events';
 
 import {
-  ScoreBar,
+  MoneyBar,
 } from './components';
 import './style.css';
 
@@ -49,10 +48,9 @@ export const Game: FC = () => {
     <div className="game">
       <header className="game__header">
         <div className="header__left">
-          <ScoreBar />
+          <MoneyBar />
         </div>
       </header>
-      {/* {process.env.NODE_ENV === 'development' && <FpsMeter />} */}
 
       {isGameOver && (
       <div className="game-over__overlay">

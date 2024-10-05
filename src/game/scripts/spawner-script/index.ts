@@ -6,7 +6,6 @@ import type {
 import {
   Script,
   Transform,
-  MathOps,
 } from 'remiz';
 
 import * as EventType from '../../events';
@@ -21,10 +20,8 @@ export class SpawnerScript extends Script {
   private scene: Scene;
   private actorSpawner: ActorSpawner;
 
-  private x0: number;
-  private x1: number;
-  private y0: number;
-  private y1: number;
+  private x: number;
+  private y: number;
 
   constructor(options: SpawnerScriptOptions) {
     super();
@@ -33,8 +30,6 @@ export class SpawnerScript extends Script {
       actor,
       scene,
       actorSpawner,
-      sizeX,
-      sizeY,
     } = options;
 
     this.scene = scene;
@@ -42,10 +37,8 @@ export class SpawnerScript extends Script {
 
     const transform = actor.getComponent(Transform);
 
-    this.x0 = transform.offsetX - sizeX / 2;
-    this.x1 = transform.offsetX + sizeX / 2;
-    this.y0 = transform.offsetY - sizeY / 2;
-    this.y1 = transform.offsetY + sizeY / 2;
+    this.x = transform.offsetX;
+    this.y = transform.offsetY;
 
     this.scene.addEventListener(EventType.SpawnCreature, this.handleSpawnCreature);
   }
@@ -61,8 +54,8 @@ export class SpawnerScript extends Script {
       const enemy = this.actorSpawner.spawn(templateId);
       const transform = enemy.getComponent(Transform);
 
-      transform.offsetX = MathOps.random(this.x0, this.x1);
-      transform.offsetY = MathOps.random(this.y0, this.y1);
+      transform.offsetX = this.x;
+      transform.offsetY = this.y;
 
       this.scene.appendChild(enemy);
     }

@@ -1,20 +1,20 @@
 import type { WidgetSchema } from 'remiz-editor';
 
 import {
-  Orb,
-  SnakeSegment,
-  Score,
+  Money,
   TrackSegment,
+  Movement,
+  ViewDirection,
 } from '../../../src/game/components';
 
-import { orb } from './orb';
-import { snakeSegment } from './snake-segment';
-import { score } from './score';
+import { money } from './money';
 import { trackSegment } from './track-segment';
+import { movement } from './movement';
+import { viewDirection } from './view-direction';
 
 export const componentsSchema: Record<string, WidgetSchema> = {
-  [Orb.componentName]: orb,
-  [SnakeSegment.componentName]: snakeSegment,
-  [Score.componentName]: score,
+  [Money.componentName]: money,
   [TrackSegment.componentName]: trackSegment,
+  [Movement.componentName]: movement,
+  [ViewDirection.componentName]: viewDirection,
 };

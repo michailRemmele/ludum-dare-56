@@ -18,6 +18,10 @@
       "name": "Game",
       "systems": [
         {
+          "name": "MovementSystem",
+          "options": {}
+        },
+        {
           "name": "PhysicsSystem",
           "options": {
             "gravitationalAcceleration": 300
@@ -403,6 +407,19 @@
             "ghost": false,
             "drag": 0
           }
+        },
+        {
+          "name": "Movement",
+          "config": {
+            "speed": 50
+          }
+        },
+        {
+          "name": "ViewDirection",
+          "config": {
+            "x": 0,
+            "y": 0
+          }
         }
       ],
       "children": []
@@ -560,18 +577,6 @@
                 "color": "#333366",
                 "opacity": 1
               }
-            }
-          }
-        },
-        {
-          "name": "ColliderContainer",
-          "config": {
-            "type": "boxCollider",
-            "collider": {
-              "sizeX": 24,
-              "sizeY": 24,
-              "centerX": 0,
-              "centerY": 0
             }
           }
         },

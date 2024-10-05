@@ -1,4 +1,11 @@
 {
+  "components.movement.title": "Movement",
+  "components.movement.speed.title": "Speed",
+
+  "components.viewDirection.title": "View Direction",
+  "components.viewDirection.x.title": "X",
+  "components.viewDirection.y.title": "Y",
+
   "components.snakeSegment.title": "Snake Segment",
   "components.snakeSegment.index.title": "Index",
 
@@ -9,6 +16,7 @@
 
   "components.score.title": "Score",
 
+  "systems.movementSystem.title": "Movement System",
   "systems.scenarioSystem.title": "Scenario System",
 
   "resources.scriptSystem.spawnerScript.sizeX.title": "Size X",

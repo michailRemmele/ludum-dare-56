@@ -13,8 +13,6 @@ export const MoneyUpdate = 'MoneyUpdate';
 
 export type MoveEvent = ActorEvent<{
   angle: number
-  x?: number
-  y?: number
 }>;
 
 export type AttackInputEvent = ActorEvent<{ x: number, y: number }>;

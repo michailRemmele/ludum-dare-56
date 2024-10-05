@@ -12,8 +12,8 @@ import * as EventType from '../../events';
 import { waves } from './waves';
 
 const INITIAL_TIMEOUT = 2_000;
-const PACK_TIMEOUT = 5_000;
-const WAVE_TIMEOUT = 14_000;
+const PACK_TIMEOUT = 500;
+const WAVE_TIMEOUT = 10_000;
 const SPAWNER_COUNT = 1;
 
 export class ScenarioSystem extends System {

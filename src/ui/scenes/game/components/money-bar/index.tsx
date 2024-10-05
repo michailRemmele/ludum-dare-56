@@ -3,21 +3,21 @@ import type { FC } from 'react';
 
 import { PLAYER_ID } from '../../../../../consts/actors';
 import { EngineContext } from '../../../../providers';
-import { Score } from '../../../../../game/components';
+import { Money } from '../../../../../game/components';
 
 import './style.css';
 
-export const ScoreBar: FC = () => {
+export const MoneyBar: FC = () => {
   const { scene, gameStateObserver } = useContext(EngineContext);
 
-  const [scoreValue, setScoreValue] = useState(0);
+  const [value, setValue] = useState(0);
 
   useEffect(() => {
     const handleUpdate = (): void => {
       const player = scene.getEntityById(PLAYER_ID);
-      const score = player?.getComponent(Score);
+      const score = player?.getComponent(Money);
 
-      setScoreValue(score?.value ?? 0);
+      setValue(score?.value ?? 0);
     };
 
     gameStateObserver.subscribe(handleUpdate);
@@ -25,8 +25,8 @@ export const ScoreBar: FC = () => {
   }, []);
 
   return (
-    <div className="score-bar">
-      {scoreValue}
+    <div className="money-bar">
+      {value}
     </div>
   );
 };
