@@ -9,6 +9,7 @@ import {
   HitBox,
   Weapon,
   Team,
+  Effect,
 } from '../../../src/game/components';
 
 import { money } from './money';
@@ -19,6 +20,7 @@ import { health } from './health';
 import { hitBox } from './hit-box';
 import { weapon } from './weapon';
 import { team } from './team';
+import { effect } from './effect';
 
 export const componentsSchema: Record<string, WidgetSchema> = {
   [Money.componentName]: money,
@@ -29,4 +31,5 @@ export const componentsSchema: Record<string, WidgetSchema> = {
   [HitBox.componentName]: hitBox,
   [Weapon.componentName]: weapon,
   [Team.componentName]: team,
+  [Effect.componentName]: effect,
 };

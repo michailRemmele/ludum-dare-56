@@ -24,6 +24,7 @@ import {
 import * as GameSystems from './game/systems';
 import * as GameComponents from './game/components';
 import * as GameScripts from './game/scripts';
+import { effects } from './game/effects';
 import { isTouchDevice } from './utils/is-touch-device';
 import { applyIosSafariScreenFix } from './utils/ios-screen-fix';
 import { isIos } from './utils/is-ios';
@@ -71,6 +72,7 @@ const engine = new Engine({
       // eslint-disable-next-line import/extensions
       loadUiApp: () => import('./ui/index.tsx'),
     },
+    [GameSystems.EffectsSystem.systemName]: effects,
   },
 });
 

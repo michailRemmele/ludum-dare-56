@@ -6,6 +6,7 @@ interface MovementConfig {
 
 export class Movement extends Component {
   speed: number;
+  maxSpeed: number;
   direction: Vector2;
   isMoving: boolean;
 
@@ -13,6 +14,7 @@ export class Movement extends Component {
     super();
 
     this.speed = config.speed;
+    this.maxSpeed = config.speed;
     this.direction = new Vector2(0, 0);
     this.isMoving = false;
   }

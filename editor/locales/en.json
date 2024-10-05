@@ -11,6 +11,7 @@
   "components.weapon.types.melee.title": "Melee",
   "components.weapon.types.range.title": "Range",
   "components.weapon.types.aoe.title": "AoE",
+  "components.weapon.types.freeze.title": "Freeze",
   "components.weapon.cooldown.title": "Cooldown",
   "components.weapon.properties.damage.title": "Damage",
   "components.weapon.properties.range.title": "Range",
@@ -19,6 +20,7 @@
   "components.weapon.properties.projectileModel.title": "Projectile Model",
   "components.weapon.properties.explosionRadius.title": "Explosion Radius",
   "components.weapon.properties.explosionModel.title": "Explosion Model",
+  "components.weapon.properties.slowFactor.title": "Slow Factor",
 
   "components.health.title": "Health",
   "components.health.points.title": "Points",
@@ -33,11 +35,25 @@
 
   "components.money.title": "Money",
 
+  "components.effect.title": "Effect",
+  "components.effect.script.title": "Script",
+  "components.effect.type.title": "Type",
+  "components.effect.types.instant.title": "Instant",
+  "components.effect.types.delayed.title": "Delayed",
+  "components.effect.types.periodical.title": "Periodical",
+  "components.effect.types.continuous.title": "Continuous",
+  "components.effect.types.timeLimited.title": "Time Limited",
+  "components.applicatorOptions.timer.title": "Timer",
+  "components.applicatorOptions.frequency.title": "Frequency",
+  "components.applicatorOptions.duration.title": "Duration",
+  "components.applicatorOptions.cooldown.title": "Cooldown",
+
   "systems.movementSystem.title": "Movement System",
   "systems.scenarioSystem.title": "Scenario System",
   "systems.trackSystem.title": "Track System",
   "systems.fightSystem.title": "Fight System",
   "systems.reaper.title": "Reaper",
+  "systems.effectsSystem.title": "Effects System",
 
   "resources.scriptSystem.spawnerScript.sizeX.title": "Size X",
   "resources.scriptSystem.spawnerScript.sizeY.title": "Size Y"

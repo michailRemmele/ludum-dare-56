@@ -1,5 +1,7 @@
 import { ScriptSystem } from 'remiz';
 
+import { EffectsSystem } from '../../../src/game/systems';
+
 import {
   SpawnerScript,
   TowerScript,
@@ -7,6 +9,7 @@ import {
   PlayerScript,
   BaseScript,
 } from '../../../src/game/scripts';
+import { } from '../../../src/game/effects';
 
 import {
   spawnerScript,
@@ -15,6 +18,7 @@ import {
   playerScript,
   baseScript,
 } from './script-system';
+import { freezeScript } from './effects-system';
 
 export const resourcesSchema = {
   [ScriptSystem.systemName]: {
@@ -23,5 +27,8 @@ export const resourcesSchema = {
     [DeathTrackerScript.scriptName]: deathTrackerScript,
     [PlayerScript.scriptName]: playerScript,
     [BaseScript.scriptName]: baseScript,
+  },
+  [EffectsSystem.systemName]: {
+    freeze: freezeScript,
   },
 };

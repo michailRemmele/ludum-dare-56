@@ -33,7 +33,7 @@ export const weapon: WidgetSchema = {
       type: 'number',
       dependency: {
         name: 'type',
-        value: 'range|aoe',
+        value: 'range|aoe|freeze',
       },
     },
     {
@@ -42,7 +42,7 @@ export const weapon: WidgetSchema = {
       type: 'number',
       dependency: {
         name: 'type',
-        value: 'range|aoe',
+        value: 'range|aoe|freeze',
       },
     },
     {
@@ -52,7 +52,7 @@ export const weapon: WidgetSchema = {
       referenceId: 'models',
       dependency: {
         name: 'type',
-        value: 'range|aoe',
+        value: 'range|aoe|freeze',
       },
     },
     {
@@ -61,7 +61,7 @@ export const weapon: WidgetSchema = {
       type: 'number',
       dependency: {
         name: 'type',
-        value: 'aoe',
+        value: 'aoe|freeze',
       },
     },
     {
@@ -71,7 +71,16 @@ export const weapon: WidgetSchema = {
       referenceId: 'models',
       dependency: {
         name: 'type',
-        value: 'aoe',
+        value: 'aoe|freeze',
+      },
+    },
+    {
+      name: 'properties.slowFactor',
+      title: 'components.weapon.properties.slowFactor.title',
+      type: 'number',
+      dependency: {
+        name: 'type',
+        value: 'freeze',
       },
     },
   ],
@@ -89,6 +98,10 @@ export const weapon: WidgetSchema = {
         {
           title: 'components.weapon.types.aoe.title',
           value: 'aoe',
+        },
+        {
+          title: 'components.weapon.types.freeze.title',
+          value: 'freeze',
         },
       ],
     },
