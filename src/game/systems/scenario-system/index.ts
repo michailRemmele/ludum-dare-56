@@ -7,6 +7,7 @@ import type {
   UpdateOptions,
 } from 'remiz';
 
+import { ENEMY_SPAWNER_ID } from '../../../consts/templates';
 import * as EventType from '../../events';
 
 import { waves } from './waves';
@@ -14,7 +15,6 @@ import { waves } from './waves';
 const INITIAL_TIMEOUT = 2_000;
 const PACK_TIMEOUT = 500;
 const WAVE_TIMEOUT = 10_000;
-const SPAWNER_COUNT = 1;
 
 export class ScenarioSystem extends System {
   private scene: Scene;
@@ -36,7 +36,15 @@ export class ScenarioSystem extends System {
     this.timeout = INITIAL_TIMEOUT;
 
     this.isSpawnEnd = false;
-    this.enemiesLeft = SPAWNER_COUNT * waves.reduce((count, stage) => {
+
+    const spawnerCount = this.scene.children.reduce((acc, actor) => {
+      if (actor.templateId === ENEMY_SPAWNER_ID) {
+        return acc + 1;
+      }
+      return acc;
+    }, 0);
+
+    this.enemiesLeft = spawnerCount * waves.reduce((count, stage) => {
       return count + stage.reduce(
         (waveCount, wave) => waveCount + Object.values(wave).reduce(
           (creatureCount, value) => creatureCount + value,
