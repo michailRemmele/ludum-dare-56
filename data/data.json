@@ -612,7 +612,7 @@
                 ],
                 "flipX": false,
                 "flipY": false,
-                "sortingLayer": "",
+                "sortingLayer": "decorations",
                 "fit": "repeat",
                 "material": {
                   "type": "basic",
@@ -658,7 +658,7 @@
                 ],
                 "flipX": false,
                 "flipY": false,
-                "sortingLayer": "",
+                "sortingLayer": "decorations",
                 "fit": "repeat",
                 "material": {
                   "type": "basic",
@@ -704,7 +704,7 @@
                 ],
                 "flipX": false,
                 "flipY": false,
-                "sortingLayer": "",
+                "sortingLayer": "decorations",
                 "fit": "repeat",
                 "material": {
                   "type": "basic",
@@ -770,7 +770,7 @@
                 ],
                 "flipX": false,
                 "flipY": false,
-                "sortingLayer": "",
+                "sortingLayer": "decorations",
                 "fit": "repeat",
                 "material": {
                   "type": "basic",
@@ -816,7 +816,7 @@
                 ],
                 "flipX": false,
                 "flipY": false,
-                "sortingLayer": "",
+                "sortingLayer": "decorations",
                 "fit": "repeat",
                 "material": {
                   "type": "basic",
@@ -862,7 +862,7 @@
                 ],
                 "flipX": false,
                 "flipY": false,
-                "sortingLayer": "",
+                "sortingLayer": "decorations",
                 "fit": "repeat",
                 "material": {
                   "type": "basic",
@@ -1012,17 +1012,6 @@
               "centerX": 0,
               "centerY": 0
             }
-          }
-        },
-        {
-          "name": "RigidBody",
-          "config": {
-            "type": "dynamic",
-            "mass": 1,
-            "useGravity": false,
-            "isPermeable": false,
-            "ghost": false,
-            "drag": 0
           }
         },
         {
@@ -1640,7 +1629,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "",
+            "sortingLayer": "decorations",
             "fit": "stretch",
             "material": {
               "type": "basic",
@@ -1892,7 +1881,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "",
+            "sortingLayer": "decorations",
             "fit": "stretch",
             "material": {
               "type": "basic",
@@ -1935,7 +1924,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "",
+            "sortingLayer": "decorations",
             "fit": "repeat",
             "material": {
               "type": "basic",
@@ -1979,7 +1968,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "",
+            "sortingLayer": "decorations",
             "fit": "repeat",
             "material": {
               "type": "basic",
@@ -2023,7 +2012,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "",
+            "sortingLayer": "decorations",
             "fit": "stretch",
             "material": {
               "type": "basic",
@@ -2067,7 +2056,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "",
+            "sortingLayer": "decorations",
             "fit": "stretch",
             "material": {
               "type": "basic",
@@ -2111,7 +2100,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "",
+            "sortingLayer": "units",
             "fit": "stretch",
             "material": {
               "type": "basic",
