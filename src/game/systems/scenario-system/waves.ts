@@ -13,6 +13,7 @@ export const waves: Array<Wave> = [
     { [ENEMY_ID]: 1 },
     { [ENEMY_ID]: 1 },
     { [ENEMY_ID]: 1 },
+    { [ENEMY_ID]: 1 },
   ],
   [
     { [ENEMY_ID]: 1 },

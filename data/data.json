@@ -236,7 +236,9 @@
             {
               "name": "TrackSegment",
               "config": {
-                "next": "7c251d5b-cc09-4929-9be9-64e33eceeb3e"
+                "next": [
+                  "7c251d5b-cc09-4929-9be9-64e33eceeb3e"
+                ]
               }
             }
           ],
@@ -262,7 +264,10 @@
             {
               "name": "TrackSegment",
               "config": {
-                "next": "22584a53-5231-47a0-a305-4929467d2928"
+                "next": [
+                  "22584a53-5231-47a0-a305-4929467d2928",
+                  "d67fd279-3558-4d43-a948-e95523e20d59"
+                ]
               }
             }
           ],
@@ -288,7 +293,9 @@
             {
               "name": "TrackSegment",
               "config": {
-                "next": "6d8576eb-91da-4d6d-bb60-f6687b0302ac"
+                "next": [
+                  "6d8576eb-91da-4d6d-bb60-f6687b0302ac"
+                ]
               }
             }
           ],
@@ -314,7 +321,9 @@
             {
               "name": "TrackSegment",
               "config": {
-                "next": "d67fd279-3558-4d43-a948-e95523e20d59"
+                "next": [
+                  "d67fd279-3558-4d43-a948-e95523e20d59"
+                ]
               }
             }
           ],
@@ -340,7 +349,9 @@
             {
               "name": "TrackSegment",
               "config": {
-                "next": "f766ad28-610e-4ec1-aa42-d66f7067b76c"
+                "next": [
+                  "f766ad28-610e-4ec1-aa42-d66f7067b76c"
+                ]
               }
             }
           ],
@@ -366,7 +377,9 @@
             {
               "name": "TrackSegment",
               "config": {
-                "next": "42c064c3-2e51-4b41-8859-ac0e842e6ba6"
+                "next": [
+                  "42c064c3-2e51-4b41-8859-ac0e842e6ba6"
+                ]
               }
             }
           ],
@@ -392,7 +405,9 @@
             {
               "name": "TrackSegment",
               "config": {
-                "next": "null"
+                "next": [
+                  "null"
+                ]
               }
             }
           ],

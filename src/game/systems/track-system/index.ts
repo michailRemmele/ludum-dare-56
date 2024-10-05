@@ -21,7 +21,9 @@ export class TrackSystem extends System {
       components: [TrackSegment],
     });
 
-    this.segmentsCollection.sort((a: Actor, b: Actor) => a.name.localeCompare(b.name));
+    this.segmentsCollection.sort((a: Actor, b: Actor) =>
+      a.name.localeCompare(b.name)
+    );
 
     this.movementCollection = new ActorCollection(options.scene, {
       components: [Movement],
@@ -42,7 +44,7 @@ export class TrackSystem extends System {
   }
 
   update(options: UpdateOptions): void {
-    const segments: (Pick<Transform, "offsetX" | "offsetY"> & Pick<TrackSegment, 'next'>)[] = [];
+    const segments: (Pick<Transform, "offsetX" | "offsetY"> & Pick<TrackSegment, "next">)[] = [];
 
     this.segmentsCollection.forEach((actor) => {
       const { next } = actor.getComponent(TrackSegment);
@@ -51,7 +53,7 @@ export class TrackSystem extends System {
       segments.push({ offsetX, offsetY, next });
     });
 
-    this.movementCollection.forEach((actor) => {
+    this.movementCollection.forEach((actor, i) => {
       const transform = actor.getComponent(Transform);
 
       // Ищем пересечения центов
@@ -62,7 +64,9 @@ export class TrackSystem extends System {
       );
 
       if (intersectedSegment) {
-        const nextSegment = this.segmentsCollection.getById(intersectedSegment.next);
+        const nextSegment = this.segmentsCollection.getById(
+          intersectedSegment.next[i % intersectedSegment.next.length]
+        );
 
         if (!nextSegment) {
           return;

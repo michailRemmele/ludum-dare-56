@@ -6,7 +6,7 @@ export const trackSegment: WidgetSchema = {
     {
       name: 'next',
       title: 'components.trackSegment.next.title',
-      type: 'string',
+      type: 'multitext',
     },
   ]
 };

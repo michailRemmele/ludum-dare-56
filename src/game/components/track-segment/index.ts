@@ -1,11 +1,11 @@
 import { Component } from "remiz";
 
 interface TrackSegmentConfig {
-  next: string;
+  next: string[];
 }
 
 export class TrackSegment extends Component {
-  next: string;
+  next: string[];
 
   constructor(config: TrackSegmentConfig) {
     super();
