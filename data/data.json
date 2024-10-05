@@ -196,6 +196,12 @@
                 "scaleX": 1,
                 "scaleY": 1
               }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "index": 0
+              }
             }
           ],
           "children": []
@@ -215,6 +221,12 @@
                 "rotation": 0,
                 "scaleX": 1,
                 "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "index": 1
               }
             }
           ],
@@ -236,6 +248,12 @@
                 "scaleX": 1,
                 "scaleY": 1
               }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "index": 2
+              }
             }
           ],
           "children": []
@@ -255,6 +273,12 @@
                 "rotation": 0,
                 "scaleX": 1,
                 "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "index": 3
               }
             }
           ],
@@ -276,6 +300,12 @@
                 "scaleX": 1,
                 "scaleY": 1
               }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "index": 4
+              }
             }
           ],
           "children": []
@@ -295,6 +325,12 @@
                 "rotation": 0,
                 "scaleX": 1,
                 "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "index": 5
               }
             }
           ],
@@ -537,6 +573,12 @@
               "centerX": 0,
               "centerY": 0
             }
+          }
+        },
+        {
+          "name": "TrackSegment",
+          "config": {
+            "index": 0
           }
         }
       ],
