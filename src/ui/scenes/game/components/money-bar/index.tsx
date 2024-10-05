@@ -1,27 +1,27 @@
 import { useContext, useState, useEffect } from 'react';
 import type { FC } from 'react';
 
-import { PLAYER_ID } from '../../../../../consts/actors';
 import { EngineContext } from '../../../../providers';
-import { Money } from '../../../../../game/components';
+import * as EventType from '../../../../../game/events';
+import type { MoneyUpdateEvent } from '../../../../../game/events';
 
 import './style.css';
 
 export const MoneyBar: FC = () => {
-  const { scene, gameStateObserver } = useContext(EngineContext);
+  const { scene } = useContext(EngineContext);
 
   const [value, setValue] = useState(0);
 
   useEffect(() => {
-    const handleUpdate = (): void => {
-      const player = scene.getEntityById(PLAYER_ID);
-      const score = player?.getComponent(Money);
-
-      setValue(score?.value ?? 0);
+    const handleUpdate = (event: MoneyUpdateEvent): void => {
+      setValue(event.money);
     };
 
-    gameStateObserver.subscribe(handleUpdate);
-    return (): void => gameStateObserver.unsubscribe(handleUpdate);
+    scene.addEventListener(EventType.MoneyUpdate, handleUpdate);
+
+    return (): void => {
+      scene.removeEventListener(EventType.MoneyUpdate, handleUpdate);
+    };
   }, []);
 
   return (
