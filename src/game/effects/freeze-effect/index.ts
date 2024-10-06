@@ -31,13 +31,14 @@ export class FreezeEffect implements EffectScript {
 
     movement.speed = movement.maxSpeed * this.slowFactor;
 
-    const sprite = this.actor.getComponent(Sprite);
+    const model = this.actor.children.find((child) => child.name === 'Model');
+    const sprite = model?.getComponent(Sprite);
     if (!sprite) {
       return;
     }
 
     this.prevColor = sprite.material.options.color;
-    sprite.material.options.color = '#ccffff';
+    sprite.material.options.color = '#5380FF';
   }
 
   onCancel(): void {
