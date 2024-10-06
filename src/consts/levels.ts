@@ -1,0 +1,4 @@
+export const LEVELS_ITERABLE = [
+  '814bb481-8226-4f26-8df4-7963417938ec',
+  '6680ce1d-74d1-4995-b704-a4373a551c27',
+];

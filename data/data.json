@@ -1146,6 +1146,879 @@
           "children": []
         }
       ]
+    },
+    {
+      "id": "6680ce1d-74d1-4995-b704-a4373a551c27",
+      "name": "Demo Level copy",
+      "actors": [
+        {
+          "id": "06cd9c78-e49f-470f-b131-3d7d0d8f6c02",
+          "name": "Background",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "background",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#99cc66",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "585277ec-0325-4b27-8d93-bb5bf97aebaf",
+          "name": "Player",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Camera",
+              "config": {
+                "zoom": 1
+              }
+            },
+            {
+              "name": "Money",
+              "config": {}
+            },
+            {
+              "name": "ScriptBundle",
+              "config": {
+                "scripts": [
+                  {
+                    "id": "9ee1a559-a98c-4e89-b75d-1dd438aa7205",
+                    "name": "PlayerScript",
+                    "options": {}
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Level",
+              "config": {
+                "index": 0
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4bc17c8c-dd8e-4d42-9b2c-70e0dbe3103c",
+          "templateId": "d515c668-bdac-424b-92b7-ca62b8b772cc",
+          "fromTemplate": true,
+          "name": "Enemy Spawner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -228,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "0b4c0c31-bf99-4bf9-b26b-3edc27b0cfba",
+          "templateId": "f14f1694-7865-4783-9b21-774bde2ad9b3",
+          "fromTemplate": true,
+          "name": "Base",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 60,
+                "offsetY": -204,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "9b8397fe-ffd9-4567-8888-f549b6bbe031",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 0",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -228,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "080f50ec-56c4-4893-a2a3-4542bcd65c67"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "080f50ec-56c4-4893-a2a3-4542bcd65c67",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "22584a53-5231-47a0-a305-4929467d2928",
+                  "d67fd279-3558-4d43-a948-e95523e20d59"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f2e9c0ba-7a3b-4c3c-ac5d-48a9b6ee4a06",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "6d8576eb-91da-4d6d-bb60-f6687b0302ac"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b7b1f5b4-4c7f-42d9-98ec-e40988be9595",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "d67fd279-3558-4d43-a948-e95523e20d59"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "cb56f924-f44c-428b-a0f6-d3b287a04ee7",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "f766ad28-610e-4ec1-aa42-d66f7067b76c"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "5e34d06b-4e9b-42e5-90e7-a9a169b59cb9",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 5",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "42c064c3-2e51-4b41-8859-ac0e842e6ba6"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "233895a9-9cd3-49d6-aebc-9d91c1e0db7b",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 6",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": -252,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "null"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "140458a1-ca01-4860-af56-e722a6b8608d",
+          "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
+          "fromTemplate": true,
+          "name": "Tower",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "9932f153-f2fb-435c-aa52-717407b3c917",
+          "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
+          "fromTemplate": true,
+          "name": "Tower 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4278678c-a1ac-4838-887c-ae3a7272169b",
+          "templateId": "0bd10eee-4ad4-47f9-ba0b-88866efc932f",
+          "fromTemplate": true,
+          "name": "Tower (explosive)",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "63ae287d-b7e7-414c-a244-6d8137ab7715",
+          "name": "Meadow",
+          "components": [
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "bg-1.png",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "meadow",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "18b703a1-3eb8-4def-8a6e-a0cf0fb44f6b",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 270,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "7b488730-c51f-4db4-8960-93b1d7bd44ae",
+          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+          "fromTemplate": true,
+          "name": "UI Track Corner Top",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "700471bb-3238-4499-81c3-f2b8e63079ae",
+          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+          "fromTemplate": true,
+          "name": "UI Track Corner Top 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 90,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e7fcfe11-c139-4a7c-9e30-784533b05a1d",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_h-2.png",
+                "width": 216,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "decorations",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "2be5a6b4-6f64-4b03-8bab-9562fac5ffa9",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_v-2.png",
+                "width": 24,
+                "height": 240,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "decorations",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "daf7ad00-7e80-402e-8516-052748b3da59",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -72,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_h-2.png",
+                "width": 96,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "decorations",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "78df796f-961a-4df0-92de-38f46dee7014",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6591cfb1-30dc-43aa-b449-db95ab196f67",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_v-1.png",
+                "width": 24,
+                "height": 240,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "decorations",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c27cdb86-9966-49cd-a75e-80ae1d8feb76",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road copy",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 48,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_h-2.png",
+                "width": 96,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "decorations",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e9939f7e-f91e-4cba-b966-44be9a826a0c",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 1 copy",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_v-1.png",
+                "width": 24,
+                "height": 264,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "decorations",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f4638295-310c-4122-8ac7-a81a93d59872",
+          "templateId": "11d0673f-ffca-4a71-9b97-1e6326eabf80",
+          "fromTemplate": true,
+          "name": "Flower Bed",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -73,
+                "offsetY": -97,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f58acdfe-e8a6-4ed4-89e2-749b3f914d31",
+          "templateId": "c6bbd954-f100-412e-9f71-99241a254073",
+          "fromTemplate": true,
+          "name": "Veg Bed",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 47,
+                "offsetY": 47,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "43b51519-58cb-48f6-9439-64c77160f5ca",
+          "templateId": "12645e38-9f08-419f-8be1-9979a8cdb9ab",
+          "fromTemplate": true,
+          "name": "Hothouse",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 49,
+                "offsetY": -34,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "21e27921-385e-4a5e-b62c-79f302bde72d",
+          "templateId": "e28dc035-850c-48cd-872c-b65ac8d6a437",
+          "fromTemplate": true,
+          "name": "Tower Freeze",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
     }
   ],
   "templates": [
@@ -1365,8 +2238,8 @@
           "name": "Sprite",
           "config": {
             "src": "house.png",
-            "width": 72,
-            "height": 72,
+            "width": 120,
+            "height": 120,
             "slice": 1,
             "rotation": 0,
             "sortCenter": [

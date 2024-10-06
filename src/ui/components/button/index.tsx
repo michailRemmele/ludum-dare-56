@@ -5,8 +5,9 @@ import './style.css';
 export interface ButtonProps {
   children: ReactNode
   onClick: () => void
+  styles: any
 }
 
-export const Button: FC<ButtonProps> = ({ children, onClick }) => (
-  <button className="button" type="button" onClick={onClick}>{children}</button>
+export const Button: FC<ButtonProps> = ({ children, onClick, styles }) => (
+  <button style={styles} className="button" type="button" onClick={onClick}>{children}</button>
 );

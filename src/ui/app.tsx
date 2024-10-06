@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import {useContext, useEffect, useState} from 'react';
 import type { FC } from 'react';
 
 import { MAIN_MENU_ID, GAME_ID } from '../consts/scenes';
@@ -6,6 +6,7 @@ import { createLongPressFixHandler } from '../utils/long-press-fix';
 
 import { EngineContext } from './providers';
 import { MainMenu, Game } from './scenes';
+import { LEVELS_ITERABLE } from '../consts/levels.ts';
 
 export const App: FC = () => {
   const { scene } = useContext(EngineContext);
