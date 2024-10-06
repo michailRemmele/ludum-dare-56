@@ -44,6 +44,4 @@ export const levels = [
   level1,
   level1,
   level1,
-  level1,
-  level1,
 ];
