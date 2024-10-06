@@ -30,7 +30,6 @@ export class SpotScript extends Script {
   }
 
   private handleSelect = (): void => {
-    console.log('SELECT');
     const selection = this.actorSpawner.spawn(TOWER_SELECTION_ID);
     this.actor.appendChild(selection);
   };

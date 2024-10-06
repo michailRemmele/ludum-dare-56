@@ -23,7 +23,7 @@ export class Weapon extends Component {
   cooldown: number;
   cooldownRemaining: number;
   isActive: boolean;
-  properties: MeleeWeapon | RangeWeapon | AOEWeapon;
+  properties: MeleeWeapon | RangeWeapon | AOEWeapon | FreezeWeapon;
 
   constructor(config: WeaponConfig) {
     super();

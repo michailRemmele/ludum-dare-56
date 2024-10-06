@@ -36,6 +36,9 @@
   "components.money.title": "Money",
   "components.money.value.title": "Value",
 
+  "components.tier.title": "Tier",
+  "components.tier.index.title": "Index",
+
   "components.effect.title": "Effect",
   "components.effect.script.title": "Script",
   "components.effect.type.title": "Type",

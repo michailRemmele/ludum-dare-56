@@ -1648,6 +1648,12 @@
           "config": {
             "index": 0
           }
+        },
+        {
+          "name": "Tier",
+          "config": {
+            "index": 0
+          }
         }
       ],
       "children": []
@@ -1926,6 +1932,12 @@
             "rotation": 0,
             "scaleX": 1,
             "scaleY": 1
+          }
+        },
+        {
+          "name": "Tier",
+          "config": {
+            "index": 0
           }
         }
       ],
@@ -2413,6 +2425,12 @@
         },
         {
           "name": "Team",
+          "config": {
+            "index": 0
+          }
+        },
+        {
+          "name": "Tier",
           "config": {
             "index": 0
           }
