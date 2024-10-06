@@ -8,7 +8,10 @@ import type { FC, MouseEventHandler } from 'react';
 import { SpriteRendererService } from 'remiz';
 import type { Actor } from 'remiz';
 
-import { Money } from '../../../../../game/components';
+import {
+  Money,
+  Tier,
+} from '../../../../../game/components';
 import {
   CONSTRUCTION_SPOT_ID,
   BASE_TOWER_ID,
@@ -18,14 +21,11 @@ import {
 import { EngineContext } from '../../../../providers';
 import * as EventType from '../../../../../game/events';
 
+import { UpgrageItem } from './upgrage-item';
+import type { Tower, TierUpgrade } from './types';
 import './style.css';
 
-type Tower = {
-  id: string
-  name: string
-  cost: number
-};
-
+const SPOTS = [CONSTRUCTION_SPOT_ID, BASE_TOWER_ID, AOE_TOWER_ID, FREEZE_TOWER_ID];
 const TOWERS: Tower[] = [
   {
     id: BASE_TOWER_ID,
@@ -43,7 +43,68 @@ const TOWERS: Tower[] = [
     cost: 75,
   },
 ];
+const TIERS: Record<string, TierUpgrade[]> = {
+  [BASE_TOWER_ID]: [
+    {
+      name: 'II',
+      weapon: {
+        damage: 25,
+        range: 12,
+      },
+      cost: 50,
+    },
+    {
+      name: 'III',
+      weapon: {
+        damage: 25,
+        range: 12,
+      },
+      cost: 50,
+    },
+  ],
+  [AOE_TOWER_ID]: [
+    {
+      name: 'II',
+      weapon: {
+        damage: 10,
+        explosionRadius: 12,
+      },
+      cost: 100,
+    },
+    {
+      name: 'III',
+      weapon: {
+        damage: 10,
+        explosionRadius: 12,
+      },
+      cost: 100,
+    },
+  ],
+  [FREEZE_TOWER_ID]: [
+    {
+      name: 'II',
+      weapon: {
+        damage: 5,
+        explosionRadius: 12,
+      },
+      cost: 75,
+    },
+    {
+      name: 'III',
+      weapon: {
+        damage: 5,
+        explosionRadius: 12,
+      },
+      cost: 75,
+    },
+  ],
+};
 const PLAYER_ACTOR_NAME = 'Player';
+
+const getNextTier = (actor: Actor): TierUpgrade | undefined => {
+  const tier = actor.getComponent(Tier);
+  return TIERS[actor.templateId!][tier.index];
+};
 
 export const ConstructionMenu: FC = () => {
   const { scene } = useContext(EngineContext);
@@ -78,7 +139,7 @@ export const ConstructionMenu: FC = () => {
 
     const rendererService = scene.getService(SpriteRendererService);
     const spot = rendererService.intersectsWithPoint(clientX, clientY)
-      .find((actor) => actor.templateId === CONSTRUCTION_SPOT_ID);
+      .find((actor) => actor.templateId && SPOTS.includes(actor.templateId));
 
     if (!spot) {
       return;
@@ -102,27 +163,47 @@ export const ConstructionMenu: FC = () => {
     setSelectedSpot(undefined);
   };
 
+  const handleUpgrage = (tier: TierUpgrade): void => {
+    if (!selectedSpot) {
+      return;
+    }
+
+    selectedSpot.dispatchEvent(EventType.UpgradeTower, { ...tier });
+    selectedSpot.dispatchEvent(EventType.Unselect);
+    setSelectedSpot(undefined);
+  };
+
   return (
     <div className="consturction-menu__overlay" onClick={handleClick}>
       {selectedSpot && (
         <div className="construction-menu" ref={menuRef}>
-          <h4 className="consturction-menu__title">Build</h4>
-          <div className="construction-menu__list">
-            {TOWERS.map((tower) => (
-              <button
-                key={tower.id}
-                className="construction-menu__button"
-                type="button"
-                onClick={() => handleBuild(tower)}
-                disabled={money < tower.cost}
-              >
-                {tower.name[0]}
-                <span className="construction-menu__cost">
-                  {tower.cost}
-                </span>
-              </button>
-            ))}
-          </div>
+          {selectedSpot.templateId === CONSTRUCTION_SPOT_ID ? (
+            <>
+              <h4 className="consturction-menu__title">Build</h4>
+              <div className="construction-menu__list">
+                {TOWERS.map((tower) => (
+                  <button
+                    key={tower.id}
+                    className="construction-menu__button"
+                    type="button"
+                    onClick={() => handleBuild(tower)}
+                    disabled={money < tower.cost}
+                  >
+                    {tower.name[0]}
+                    <span className="construction-menu__cost">
+                      {tower.cost}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </>
+          ) : (
+            <UpgrageItem
+              money={money}
+              onClick={handleUpgrage}
+              upgradeTier={getNextTier(selectedSpot)}
+            />
+          )}
         </div>
       )}
     </div>

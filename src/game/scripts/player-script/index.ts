@@ -10,9 +10,17 @@ import {
   Transform,
 } from 'remiz';
 
-import { Money } from '../../components';
+import {
+  Money,
+  Weapon,
+  Tier,
+} from '../../components';
 import * as EventType from '../../events';
-import type { BuildTowerEvent, EnemyDeathEvent } from '../../events';
+import type {
+  BuildTowerEvent,
+  EnemyDeathEvent,
+  UpgradeTowerEvent,
+} from '../../events';
 
 const MONEY_PER_ENEMY = 10;
 const VIEWPORT_SIZE = 480;
@@ -31,11 +39,13 @@ export class PlayerScript extends Script {
 
     this.scene.addEventListener(EventType.EnemyDeath, this.handleEnemyDeath);
     this.scene.addEventListener(EventType.BuildTower, this.handleTowerBuild);
+    this.scene.addEventListener(EventType.UpgradeTower, this.handleUpgrageTower);
   }
 
   destroy(): void {
     this.scene.removeEventListener(EventType.EnemyDeath, this.handleEnemyDeath);
     this.scene.removeEventListener(EventType.BuildTower, this.handleTowerBuild);
+    this.scene.removeEventListener(EventType.UpgradeTower, this.handleUpgrageTower);
   }
 
   private handleEnemyDeath = (event: EnemyDeathEvent): void => {
@@ -74,6 +84,28 @@ export class PlayerScript extends Script {
 
     spot?.remove();
     this.scene.appendChild(tower);
+
+    this.scene.dispatchEvent(EventType.MoneyUpdate, { money: money.value });
+  };
+
+  private handleUpgrageTower = (event: UpgradeTowerEvent): void => {
+    const { cost, weapon, target } = event;
+
+    const money = this.actor.getComponent(Money);
+
+    if (money.value < cost) {
+      return;
+    }
+
+    money.value -= cost;
+
+    const weaponComponent = target.getComponent(Weapon);
+    const tierComponent = target.getComponent(Tier);
+
+    Object.keys(weapon).forEach((key) => {
+      (weaponComponent.properties as unknown as Record<string, number>)[key] += weapon[key];
+    });
+    tierComponent.index += 1;
 
     this.scene.dispatchEvent(EventType.MoneyUpdate, { money: money.value });
   };

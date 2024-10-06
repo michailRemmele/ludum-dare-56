@@ -11,6 +11,7 @@ export const EnemyDeath = 'EnemyDeath';
 export const NextWave = 'NextWave';
 export const MoneyUpdate = 'MoneyUpdate';
 export const BuildTower = 'BuildTower';
+export const UpgradeTower = 'UpgradeTower';
 export const Select = 'Select';
 export const Unselect = 'Unselect';
 export const AddEffect = 'AddEffect';
@@ -27,6 +28,7 @@ export type AttackEvent = ActorEvent<{ x: number, y: number }>;
 export type DamageEvent = ActorEvent<{ value: number, actor?: Actor }>;
 export type ProvokeEvent = ActorEvent<{ actor: Actor }>;
 export type KillEvent = ActorEvent<{ force?: boolean }>;
+export type UpgradeTowerEvent = ActorEvent<{ cost: number, weapon: Record<string, number> }>;
 export type AddEffectEvent = ActorEvent<{
   id: string
   options: Record<string, unknown>
@@ -52,6 +54,7 @@ declare module 'remiz' {
     [Damage]: DamageEvent
     [Select]: ActorEvent
     [Unselect]: ActorEvent
+    [UpgradeTower]: UpgradeTowerEvent
     [AddEffect]: AddEffectEvent
     [RemoveEffect]: RemoveEffectEvent
     [ApplyEffect]: ActorEvent
