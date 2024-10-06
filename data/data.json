@@ -2116,7 +2116,8 @@
               "config": {
                 "next": [
                   "d0094d44-27f9-4a37-8415-bd3aa40f1f0b",
-                  "813365e9-a281-4b77-a9aa-1a4525ae1365"
+                  "813365e9-a281-4b77-a9aa-1a4525ae1365",
+                  "16698241-8a21-4a21-8fb7-e7222397cd85"
                 ]
               }
             }
@@ -3022,6 +3023,26 @@
               "config": {
                 "offsetX": 36,
                 "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "1ddeaf8b-c207-44b7-b222-ef7d98498f93",
+          "templateId": "928f5cb7-263b-48dd-8e79-74b769c18dbc",
+          "fromTemplate": true,
+          "name": "Freeze Effect",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 96,
                 "offsetZ": 0,
                 "rotation": 0,
                 "scaleX": 1,
