@@ -50,7 +50,8 @@ export class FreezeEffect implements EffectScript {
 
     movement.speed = movement.maxSpeed;
 
-    const sprite = this.actor.getComponent(Sprite);
+    const model = this.actor.children.find((child) => child.name === 'Model');
+    const sprite = model?.getComponent(Sprite);
     if (!sprite) {
       return;
     }
