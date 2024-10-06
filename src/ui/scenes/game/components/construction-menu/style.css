@@ -1,0 +1,59 @@
+.consturction-menu__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.construction-menu {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  
+  border: 3px solid #ffffff;
+  background-color: rgba(32, 32, 32, 0.5);
+
+  padding: 16px;
+}
+
+.construction-menu__list {
+  display: flex;
+  gap: 16px;
+}
+
+.consturction-menu__title {
+  font-size: 24px;
+  color: #ffffff;
+
+  margin: 0 0 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.construction-menu__button {
+  width: 90px;
+
+  border: 4px solid white;
+  padding: 10px 24px;
+  font-size: 24px;
+  color: white;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.construction-menu__cost {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+
+.construction-menu__button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}

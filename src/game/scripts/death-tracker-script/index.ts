@@ -6,6 +6,7 @@ import type {
 import { Script } from 'remiz';
 
 import * as EventType from '../../events';
+import type { KillEvent } from '../../events';
 
 export class DeathTrackerScript extends Script {
   private actor: Actor;
@@ -24,8 +25,8 @@ export class DeathTrackerScript extends Script {
     this.actor.removeEventListener(EventType.Kill, this.handleKill);
   }
 
-  private handleKill = (): void => {
-    this.scene.dispatchEvent(EventType.EnemyDeath);
+  private handleKill = (event: KillEvent): void => {
+    this.scene.dispatchEvent(EventType.EnemyDeath, { withoutReward: event.force });
   };
 }
 

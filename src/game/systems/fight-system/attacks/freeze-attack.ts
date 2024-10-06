@@ -178,14 +178,14 @@ export class FreezeAttack implements Attack {
 
     if (!this.isShotFinished) {
       this.explode();
-      this.shot.dispatchEvent(EventType.Kill);
+      this.shot.dispatchEvent(EventType.Kill, { force: true });
       this.isShotFinished = true;
     }
 
     this.explosionLifetime -= deltaTime;
 
     if (this.explosionLifetime <= 0) {
-      this.explosion?.dispatchEvent(EventType.Kill);
+      this.explosion?.dispatchEvent(EventType.Kill, { force: true });
       this.isFinished = true;
     }
   }

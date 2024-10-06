@@ -10,6 +10,7 @@ export const SpawnCreature = 'SpawnCreature';
 export const EnemyDeath = 'EnemyDeath';
 export const NextWave = 'NextWave';
 export const MoneyUpdate = 'MoneyUpdate';
+export const BuildTower = 'BuildTower';
 export const AddEffect = 'AddEffect';
 export const RemoveEffect = 'RemoveEffect';
 export const ApplyEffect = 'ApplyEffect';
@@ -23,6 +24,7 @@ export type AttackInputEvent = ActorEvent<{ x: number, y: number }>;
 export type AttackEvent = ActorEvent<{ x: number, y: number }>;
 export type DamageEvent = ActorEvent<{ value: number, actor?: Actor }>;
 export type ProvokeEvent = ActorEvent<{ actor: Actor }>;
+export type KillEvent = ActorEvent<{ force?: boolean }>;
 export type AddEffectEvent = ActorEvent<{
   id: string
   options: Record<string, unknown>
@@ -36,13 +38,15 @@ export type RemoveEffectEvent = ActorEvent<{
 export type GameOverEvent = SceneEvent<{ isWin: boolean }>;
 export type SpawnCreatureEvent = SceneEvent<{ templateId: string, quantity: number }>;
 export type MoneyUpdateEvent = SceneEvent<{ money: number }>;
+export type EnemyDeathEvent = SceneEvent<{ withoutReward?: boolean }>;
+export type BuildTowerEvent = SceneEvent<{ id: string, cost: number, spotId: string }>;
 
 declare module 'remiz' {
   export interface ActorEventMap {
     [Movement]: MoveEvent
     [AttackInput]: AttackInputEvent
     [Attack]: ActorEvent
-    [Kill]: ActorEvent
+    [Kill]: KillEvent
     [Damage]: DamageEvent
     [AddEffect]: AddEffectEvent
     [RemoveEffect]: RemoveEffectEvent
@@ -53,8 +57,9 @@ declare module 'remiz' {
   export interface SceneEventMap {
     [GameOver]: GameOverEvent
     [SpawnCreature]: SpawnCreatureEvent
-    [EnemyDeath]: SceneEvent
+    [EnemyDeath]: EnemyDeathEvent
     [NextWave]: SceneEvent
     [MoneyUpdate]: MoneyUpdateEvent
+    [BuildTower]: BuildTowerEvent
   }
 }

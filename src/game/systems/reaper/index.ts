@@ -11,12 +11,11 @@ import type {
   SystemOptions,
   Scene,
   UpdateOptions,
-  ActorEvent,
   Component,
 } from 'remiz';
 
 import * as EventType from '../../events';
-import type { DamageEvent } from '../../events';
+import type { DamageEvent, KillEvent } from '../../events';
 import { ViewDirection, Health } from '../../components';
 import { Constructor } from '../../../types/utils';
 
@@ -69,7 +68,7 @@ export class Reaper extends System {
     }
   };
 
-  handleKill = (value: Actor | ActorEvent): void => {
+  handleKill = (value: Actor | KillEvent): void => {
     const actor = value instanceof Actor ? value : value.target;
 
     actor.getComponents().forEach((component) => {

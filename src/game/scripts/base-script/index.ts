@@ -39,7 +39,7 @@ export class BaseScript extends Script {
       return;
     }
 
-    actor.dispatchEvent(EventType.Kill);
+    actor.dispatchEvent(EventType.Kill, { force: true });
     this.actor.dispatchEvent(EventType.Damage, { value: DAMAGE_PER_ENEMY });
   };
 

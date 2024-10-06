@@ -17,6 +17,7 @@ import type { GameOverEvent } from '../../../game/events';
 import {
   MoneyBar,
   BaseHealthBar,
+  ConstructionMenu,
 } from './components';
 import './style.css';
 
@@ -53,6 +54,8 @@ export const Game: FC = () => {
           <MoneyBar />
         </div>
       </header>
+
+      <ConstructionMenu />
 
       {isGameOver && (
       <div className="game-over__overlay">
