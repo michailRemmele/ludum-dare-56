@@ -131,7 +131,7 @@
                   "type": "basic",
                   "options": {
                     "blending": "normal",
-                    "color": "#99cc66",
+                    "color": "#669933",
                     "opacity": 1
                   }
                 }
@@ -343,50 +343,6 @@
                 "next": [
                   "f766ad28-610e-4ec1-aa42-d66f7067b76c"
                 ]
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "8ddec13d-766e-4d69-b282-9110c16e00d4",
-          "name": "Meadow",
-          "components": [
-            {
-              "name": "Sprite",
-              "config": {
-                "src": "bg-1.png",
-                "width": 480,
-                "height": 480,
-                "slice": 1,
-                "rotation": 0,
-                "sortCenter": [
-                  0,
-                  0
-                ],
-                "flipX": false,
-                "flipY": false,
-                "sortingLayer": "meadow",
-                "fit": "stretch",
-                "material": {
-                  "type": "basic",
-                  "options": {
-                    "blending": "normal",
-                    "color": "#fff",
-                    "opacity": 1
-                  }
-                }
-              }
-            },
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": 0,
-                "offsetY": 0,
-                "offsetZ": 0,
-                "rotation": 0,
-                "scaleX": 1,
-                "scaleY": 1
               }
             }
           ],
@@ -671,6 +627,346 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "8e616d66-93fd-4a0e-a3fa-8cc4e580706e",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "02cc651c-021e-4205-aad0-cbf8dc5f79ad",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "5c690ce7-dc60-4aa2-970e-43950952c8c7",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 36,
+                "offsetY": 156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f6c3c69c-1b5d-4748-b95b-5de985eae916",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 204,
+                "offsetY": 156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3e314b8a-1379-46f4-9bee-0c156939e4c8",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 60,
+                "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "47a5f52f-a44e-4ab1-acee-df9edc63afe9",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 5",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": -108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b9e23888-22e8-469d-9d3c-3f01e24220b5",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 6",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 204,
+                "offsetY": -84,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "dcea097b-bcfc-445a-b89a-778adb228e5d",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 7",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e6693ba3-c998-4ed4-b9a4-cc93fc6666e8",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 8",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -204,
+                "offsetY": 204,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6da10d24-4597-4edd-8f4e-412fd86780d8",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 9",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": -108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "10e671ac-83cb-45f9-bc3d-49b053b7fcd9",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 10",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "cd0da4ac-f7d6-40eb-aed1-85b287c49214",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "80ad9daf-7d15-4251-88d7-a5f1287bc40f",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3fbfbfc4-0f7a-437c-9df4-536957db1245",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": 60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "01ece6ba-1603-4eb1-91d6-77208f5dd5d0",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": 180,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "9618893f-555b-44a0-ad5e-a632641843e7",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 180,
+                "offsetY": 204,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "905a4fca-ffef-4054-96c0-ff82be851515",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 5",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 180,
+                "offsetY": -180,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
         }
       ]
     },
@@ -713,7 +1009,7 @@
                   "type": "basic",
                   "options": {
                     "blending": "normal",
-                    "color": "#99cc66",
+                    "color": "#669933",
                     "opacity": 1
                   }
                 }
@@ -925,50 +1221,6 @@
                 "next": [
                   "3db844e1-e5cf-416c-9e29-74d94d1af600"
                 ]
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "a254eb6e-3ac9-4294-8d5f-c6346af0714b",
-          "name": "Meadow",
-          "components": [
-            {
-              "name": "Sprite",
-              "config": {
-                "src": "bg-1.png",
-                "width": 480,
-                "height": 480,
-                "slice": 1,
-                "rotation": 0,
-                "sortCenter": [
-                  0,
-                  0
-                ],
-                "flipX": false,
-                "flipY": false,
-                "sortingLayer": "meadow",
-                "fit": "stretch",
-                "material": {
-                  "type": "basic",
-                  "options": {
-                    "blending": "normal",
-                    "color": "#fff",
-                    "opacity": 1
-                  }
-                }
-              }
-            },
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": 0,
-                "offsetY": 0,
-                "offsetZ": 0,
-                "rotation": 0,
-                "scaleX": 1,
-                "scaleY": 1
               }
             }
           ],
@@ -1415,6 +1667,286 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "a01607ee-46f0-4208-b040-df7ef4c6cb21",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -36,
+                "offsetY": -12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6fbc5800-1f3c-47e0-a749-c7d8de1a5866",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 84,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "7b6a1c85-f739-4dc0-abaf-f6978c3e2a19",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": -84,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "25c50f19-44aa-4543-b5e9-3857c967fc4d",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -180,
+                "offsetY": -84,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "8955dbcc-4ba0-413e-8119-e3c067c6a950",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 36,
+                "offsetY": -204,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "dff4a176-dda0-4fed-888c-ba0bfd362eb2",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 5",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -180,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ee6618fa-c0a2-477e-8d6d-55d69a58d649",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 6",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 36,
+                "offsetY": 204,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "1c28afe8-05f1-45e0-bd4e-49b5543a4ea3",
+          "templateId": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+          "fromTemplate": true,
+          "name": "Grass 1 7",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 180,
+                "offsetY": 156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "5e7a2fbe-b159-4ea6-ad87-6b3235e468dd",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f2c47633-c0c7-4d95-a441-64d2dc9326cd",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 180,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "5b9e702c-2ad2-42e9-a4dd-719bc256eb42",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -180,
+                "offsetY": -12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "2f302475-c66c-4f5f-99eb-7f336b46df78",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "87dedfdb-7f3f-4b11-b7a8-8f60fa79db20",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": -228,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4a98d6f7-8df6-439e-a3ee-8982c12066be",
+          "templateId": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+          "fromTemplate": true,
+          "name": "Grass 2 5",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 132,
+                "offsetY": 204,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
         }
       ]
     },
@@ -1457,7 +1989,7 @@
                   "type": "basic",
                   "options": {
                     "blending": "normal",
-                    "color": "#99cc66",
+                    "color": "#669933",
                     "opacity": 1
                   }
                 }
@@ -1670,50 +2202,6 @@
                 "next": [
                   "16698241-8a21-4a21-8fb7-e7222397cd85"
                 ]
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "11315f8e-de38-4b0d-a0b0-b369fb552747",
-          "name": "Meadow",
-          "components": [
-            {
-              "name": "Sprite",
-              "config": {
-                "src": "bg-1.png",
-                "width": 480,
-                "height": 480,
-                "slice": 1,
-                "rotation": 0,
-                "sortCenter": [
-                  0,
-                  0
-                ],
-                "flipX": false,
-                "flipY": false,
-                "sortingLayer": "meadow",
-                "fit": "stretch",
-                "material": {
-                  "type": "basic",
-                  "options": {
-                    "blending": "normal",
-                    "color": "#fff",
-                    "opacity": 1
-                  }
-                }
-              }
-            },
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": 0,
-                "offsetY": 0,
-                "offsetZ": 0,
-                "rotation": 0,
-                "scaleX": 1,
-                "scaleY": 1
               }
             }
           ],
@@ -1984,86 +2472,6 @@
           "children": []
         },
         {
-          "id": "45c480f0-8d4c-41e6-8057-daa7eed18859",
-          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
-          "fromTemplate": true,
-          "name": "UI Track Corner Top",
-          "components": [
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": 156,
-                "offsetY": -60,
-                "offsetZ": 0,
-                "rotation": 90,
-                "scaleX": 1,
-                "scaleY": 1
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "40ad1a6a-4829-425c-910e-82f940a90cb3",
-          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
-          "fromTemplate": true,
-          "name": "UI Track Corner Top 1",
-          "components": [
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": 156,
-                "offsetY": 108,
-                "offsetZ": 0,
-                "rotation": 180,
-                "scaleX": 1,
-                "scaleY": 1
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "54d21e9a-3cac-4d80-90cf-0e6378fb05f2",
-          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
-          "fromTemplate": true,
-          "name": "UI Track Corner Top 2",
-          "components": [
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": -132,
-                "offsetY": 108,
-                "offsetZ": 0,
-                "rotation": 270,
-                "scaleX": 1,
-                "scaleY": 1
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "51c9eb1d-a90d-4781-b7c6-428c7e4faeea",
-          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
-          "fromTemplate": true,
-          "name": "UI Track Corner Top 3",
-          "components": [
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": -132,
-                "offsetY": -60,
-                "offsetZ": 0,
-                "rotation": 0,
-                "scaleX": 1,
-                "scaleY": 1
-              }
-            }
-          ],
-          "children": []
-        },
-        {
           "id": "947729eb-a9ab-4e91-8ff8-ecced1889336",
           "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
           "fromTemplate": true,
@@ -2156,6 +2564,86 @@
                 "offsetY": -36,
                 "offsetZ": 0,
                 "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b13c06e2-19b5-402b-a746-0a95f07152f7",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 90,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "683feae4-7c74-4236-8123-2c0a96adf338",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "0ed879e4-3d6c-45fa-9e56-fc2871a75d12",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 270,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "50cc28f0-54f9-4317-88ba-41856ed0d54f",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 180,
                 "scaleX": 1,
                 "scaleY": 1
               }
@@ -2982,49 +3470,6 @@
       "children": []
     },
     {
-      "id": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
-      "name": "UI Track Corner Top",
-      "components": [
-        {
-          "name": "Transform",
-          "config": {
-            "offsetX": 0,
-            "offsetY": 0,
-            "offsetZ": 0,
-            "rotation": 0,
-            "scaleX": 1,
-            "scaleY": 1
-          }
-        },
-        {
-          "name": "Sprite",
-          "config": {
-            "src": "road/road_c-t.png",
-            "width": 24,
-            "height": 24,
-            "slice": 1,
-            "rotation": 0,
-            "sortCenter": [
-              0,
-              0
-            ],
-            "flipX": false,
-            "flipY": false,
-            "sortingLayer": "decorations",
-            "fit": "stretch",
-            "material": {
-              "type": "basic",
-              "options": {
-                "blending": "normal",
-                "color": "#fff",
-                "opacity": 1
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "0bd10eee-4ad4-47f9-ba0b-88866efc932f",
       "name": "Tower AoE",
       "components": [
@@ -3257,7 +3702,7 @@
     },
     {
       "id": "9668d98d-787f-42d0-a738-12924045899b",
-      "name": "UI Track Corner Bottom",
+      "name": "Corner Road",
       "components": [
         {
           "name": "Transform",
@@ -3273,7 +3718,7 @@
         {
           "name": "Sprite",
           "config": {
-            "src": "road/road_c-b.png",
+            "src": "road/road-corner.png",
             "width": 24,
             "height": 24,
             "slice": 1,
@@ -3316,7 +3761,7 @@
         {
           "name": "Sprite",
           "config": {
-            "src": "road/road_h-1.png",
+            "src": "road/road-horizontal.png",
             "width": 144,
             "height": 24,
             "slice": 1,
@@ -3360,7 +3805,7 @@
         {
           "name": "Sprite",
           "config": {
-            "src": "road/road_v-2.png",
+            "src": "road/road-vertical.png",
             "width": 24,
             "height": 144,
             "slice": 1,
@@ -3749,6 +4194,94 @@
             "rotation": 0,
             "scaleX": 1,
             "scaleY": 1
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "2d5d7eae-0f58-446a-afbe-4e7b8e14e959",
+      "name": "Grass 1",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "grass-1.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "decorations",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "ab5506af-a373-4e55-8b0c-a02fea8771ab",
+      "name": "Grass 2",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "grass-2.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "decorations",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
           }
         }
       ],
