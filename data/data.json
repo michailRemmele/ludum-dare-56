@@ -1627,6 +1627,11 @@
                 "id": "c39c6831-b48e-48f9-bb01-c96b34d6df13",
                 "name": "TowerScript",
                 "options": {}
+              },
+              {
+                "id": "bbe192f2-6ada-4352-9ed5-bf7f5dd97fb5",
+                "name": "SpotScript",
+                "options": {}
               }
             ]
           }
@@ -1889,6 +1894,11 @@
               {
                 "id": "c39c6831-b48e-48f9-bb01-c96b34d6df13",
                 "name": "TowerScript",
+                "options": {}
+              },
+              {
+                "id": "06a9765a-fe30-4fe0-b201-eae8d0042b2c",
+                "name": "SpotScript",
                 "options": {}
               }
             ]
@@ -2385,6 +2395,11 @@
                 "id": "c39c6831-b48e-48f9-bb01-c96b34d6df13",
                 "name": "TowerScript",
                 "options": {}
+              },
+              {
+                "id": "70aae907-6304-4f31-ba8f-dfcb2d043cbf",
+                "name": "SpotScript",
+                "options": {}
               }
             ]
           }
@@ -2472,6 +2487,62 @@
                 "opacity": 1
               }
             }
+          }
+        },
+        {
+          "name": "ScriptBundle",
+          "config": {
+            "scripts": [
+              {
+                "id": "52ec317c-4d57-41da-bb58-b857181c0952",
+                "name": "SpotScript",
+                "options": {}
+              }
+            ]
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "742dd0f0-ee58-4680-b858-d8d61afa0c2d",
+      "name": "Tower Selection",
+      "components": [
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "selection.png",
+            "width": 28,
+            "height": 28,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "units",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
           }
         }
       ],

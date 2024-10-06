@@ -69,6 +69,7 @@ export const ConstructionMenu: FC = () => {
 
   const handleClick: MouseEventHandler<HTMLDivElement> = (event) => {
     if (selectedSpot && !menuRef.current?.contains(event.target as HTMLDivElement)) {
+      selectedSpot.dispatchEvent(EventType.Unselect);
       setSelectedSpot(undefined);
       return;
     }
@@ -83,6 +84,7 @@ export const ConstructionMenu: FC = () => {
       return;
     }
 
+    spot.dispatchEvent(EventType.Select);
     setSelectedSpot(spot);
   };
 
@@ -96,6 +98,7 @@ export const ConstructionMenu: FC = () => {
       cost: tower.cost,
       spotId: selectedSpot.id,
     });
+    selectedSpot.dispatchEvent(EventType.Unselect);
     setSelectedSpot(undefined);
   };
 
