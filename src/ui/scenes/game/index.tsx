@@ -22,7 +22,20 @@ import {
   ProgressInfo,
 } from './components';
 import './style.css';
-import {LEVELS_ITERABLE} from "../../../consts/levels.ts";
+import { LEVELS_ITERABLE } from "../../../consts/levels.ts";
+
+const finishLevel = (index, isWin) => {
+  storage.set(LEVELS_ITERABLE[index], {
+    available: true,
+    finished: isWin,
+  });
+  if (storage.get(LEVELS_ITERABLE[index + 1])?.available !== true) {
+    storage.set(LEVELS_ITERABLE[index + 1], {
+      available: isWin ? true : false,
+      finished: false,
+    });
+  }
+};
 
 export const Game: FC = () => {
   const { scene } = useContext(EngineContext);
@@ -33,7 +46,8 @@ export const Game: FC = () => {
 
   useEffect(() => {
     const handleGameOver = (event: GameOverEvent): void => {
-      storage.set(LEVELS_ITERABLE[currentLevelIndex], event.isWin);
+      finishLevel(currentLevelIndex, event.isWin);
+
       storage.set('game_started', true);
       setIsGameOver(true);
       setIsWin(event.isWin);
@@ -44,7 +58,8 @@ export const Game: FC = () => {
 
   const handleRestart = (): void => {
     let nextLevel = currentLevelIndex;
-    if (storage.get(LEVELS_ITERABLE[currentLevelIndex]) !== false) {
+    const { finished } = storage.get(LEVELS_ITERABLE[currentLevelIndex]);
+    if (finished !== false && isWin) {
       nextLevel = Number(currentLevelIndex) + 1;
     }
     if (nextLevel >= LEVELS_ITERABLE.length) {

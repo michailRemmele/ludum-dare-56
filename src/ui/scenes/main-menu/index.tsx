@@ -56,7 +56,7 @@ export const MainMenu: FC = () => {
           <h1 style={{ textAlign: 'center' }}>It seems you've made some progress last time. <br/> Choose where do you want to pick up!</h1>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
             {LEVELS_ITERABLE.map((item, index) => {
-              const playable = storage.get(item) || index === 0; // true | false | undefined
+              const playable = storage.get(item)?.available || index === 0; // true | false | undefined
               const Tag = ({as, ...props}) => as === 'button'
                 ? <Button type="button" styles={{ minWidth: 185 }} {...props} />
                 : <Button
