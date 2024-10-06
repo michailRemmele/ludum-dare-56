@@ -1962,7 +1962,7 @@
               "name": "Transform",
               "config": {
                 "offsetX": 0,
-                "offsetY": 0,
+                "offsetY": 24,
                 "offsetZ": 0,
                 "rotation": 0,
                 "scaleX": 1,
@@ -2644,6 +2644,386 @@
                 "offsetY": -60,
                 "offsetZ": 0,
                 "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f59de728-5d2b-4b03-a901-0ca41f33cb80",
+          "templateId": "9e91d9cc-42eb-4a64-b538-edeac658f370",
+          "fromTemplate": true,
+          "name": "Pond",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c3350f16-7bbd-4e63-b147-617d992312fd",
+          "templateId": "50a7ae1a-0592-4f47-889c-7b5c8d698c9c",
+          "fromTemplate": true,
+          "name": "Pond Side 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ef1fbc6e-cc2b-40e1-aeae-df216c496a69",
+          "templateId": "50a7ae1a-0592-4f47-889c-7b5c8d698c9c",
+          "fromTemplate": true,
+          "name": "Pond Side 1 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 132,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "43bdb050-de72-4a66-aa5e-0c0dd00e3924",
+          "templateId": "2aeb8f49-302a-42f0-ae48-7630c9235fd7",
+          "fromTemplate": true,
+          "name": "Pond Side Horizontal",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 84,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "0118d798-7dce-47e2-ab32-ab8f0a2aca46",
+          "templateId": "2aeb8f49-302a-42f0-ae48-7630c9235fd7",
+          "fromTemplate": true,
+          "name": "Pond Side Horizontal 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "769475b0-a425-4b87-b4e7-11272761f318",
+          "templateId": "ad5bd70e-a00a-46db-8ffa-f2a30d9bb35c",
+          "fromTemplate": true,
+          "name": "Pond Corner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": 84,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "00319029-15ae-4eed-8669-8876cfffaf34",
+          "templateId": "ad5bd70e-a00a-46db-8ffa-f2a30d9bb35c",
+          "fromTemplate": true,
+          "name": "Pond Corner 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 90,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "0d1c3432-fdaf-4920-99b5-4d123558ca49",
+          "templateId": "ad5bd70e-a00a-46db-8ffa-f2a30d9bb35c",
+          "fromTemplate": true,
+          "name": "Pond Corner 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 132,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "68a343df-26cf-444e-9e4f-9390b767deb9",
+          "templateId": "ad5bd70e-a00a-46db-8ffa-f2a30d9bb35c",
+          "fromTemplate": true,
+          "name": "Pond Corner 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 132,
+                "offsetY": 84,
+                "offsetZ": 0,
+                "rotation": 270,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ed0e762e-6a7b-498a-bc0e-a9c7f1633a93",
+          "templateId": "c7abc211-3a47-4a2a-8192-caf9b66ea624",
+          "fromTemplate": true,
+          "name": "Pond Side 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -108,
+                "offsetY": 12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "624333f2-d994-48bc-b135-948189040da1",
+          "templateId": "c7abc211-3a47-4a2a-8192-caf9b66ea624",
+          "fromTemplate": true,
+          "name": "Pond Side 2 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 132,
+                "offsetY": 60,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "35691f5b-cbcb-45bb-b334-f769a919dfa1",
+          "templateId": "a156c3f5-65e2-440e-99ae-a3d095c2da96",
+          "fromTemplate": true,
+          "name": "Pond Wood",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": -12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4f0241ec-c6e4-46e3-b98c-fa513c238ea7",
+          "templateId": "526d762b-f1a1-4ba8-8ddf-375350dc183d",
+          "fromTemplate": true,
+          "name": "Pond Lily",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": 60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "655153bf-9712-4419-8262-51bd5c0bbae5",
+          "templateId": "526d762b-f1a1-4ba8-8ddf-375350dc183d",
+          "fromTemplate": true,
+          "name": "Pond Lily 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": 12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "1840001a-aa2a-4bc6-b6ea-f0a083a6ae58",
+          "templateId": "fee7e216-0f35-472f-b6c0-6f8ae01a6a30",
+          "fromTemplate": true,
+          "name": "Pond Flower",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -60,
+                "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4b71fbfc-f825-44e3-80e7-3bf764bfb1b7",
+          "templateId": "a1801768-d4f9-4564-a4e0-adfefa662f90",
+          "fromTemplate": true,
+          "name": "Pond Waves",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": -12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "7771d53f-6bfa-426c-992f-0bfa6a3f927d",
+          "templateId": "a1801768-d4f9-4564-a4e0-adfefa662f90",
+          "fromTemplate": true,
+          "name": "Pond Waves 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -60,
+                "offsetY": 60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "582cf46e-9ebb-4808-8a4e-3b32c4c2035b",
+          "templateId": "9764afb6-8269-4fcf-a647-3384c30c2aa7",
+          "fromTemplate": true,
+          "name": "Pond Stone",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": -12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "40ce1f0b-e5f6-480b-98f5-a4c545ae4b0e",
+          "templateId": "a1801768-d4f9-4564-a4e0-adfefa662f90",
+          "fromTemplate": true,
+          "name": "Pond Waves 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 36,
+                "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
                 "scaleX": 1,
                 "scaleY": 1
               }
@@ -4274,6 +4654,446 @@
             "flipY": false,
             "sortingLayer": "decorations",
             "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "9e91d9cc-42eb-4a64-b538-edeac658f370",
+      "name": "Pond",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "",
+            "width": 216,
+            "height": 96,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#669999",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "ad5bd70e-a00a-46db-8ffa-f2a30d9bb35c",
+      "name": "Pond Corner",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_corner.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "50a7ae1a-0592-4f47-889c-7b5c8d698c9c",
+      "name": "Pond Side 1",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_side_1.png",
+            "width": 24,
+            "height": 96,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "repeat",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "c7abc211-3a47-4a2a-8192-caf9b66ea624",
+      "name": "Pond Side 2",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_side_2.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "526d762b-f1a1-4ba8-8ddf-375350dc183d",
+      "name": "Pond Lily",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_lily.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "a156c3f5-65e2-440e-99ae-a3d095c2da96",
+      "name": "Pond Wood",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_wood.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "fee7e216-0f35-472f-b6c0-6f8ae01a6a30",
+      "name": "Pond Flower",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_flower.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "a1801768-d4f9-4564-a4e0-adfefa662f90",
+      "name": "Pond Waves",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_waves.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "9764afb6-8269-4fcf-a647-3384c30c2aa7",
+      "name": "Pond Stone",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_stone.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "2aeb8f49-302a-42f0-ae48-7630c9235fd7",
+      "name": "Pond Side Horizontal",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "pond/pond_side_1_v.png",
+            "width": 216,
+            "height": 24,
+            "slice": 1,
+            "rotation": null,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "decorations",
+            "fit": "repeat",
             "material": {
               "type": "basic",
               "options": {
