@@ -178,6 +178,12 @@
                   }
                 ]
               }
+            },
+            {
+              "name": "Level",
+              "config": {
+                "index": 0
+              }
             }
           ],
           "children": []

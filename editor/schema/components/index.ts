@@ -11,6 +11,7 @@ import {
   Team,
   Effect,
   Tier,
+  Level,
 } from '../../../src/game/components';
 
 import { money } from './money';
@@ -23,6 +24,7 @@ import { weapon } from './weapon';
 import { team } from './team';
 import { effect } from './effect';
 import { tier } from './tier';
+import { level } from './level';
 
 export const componentsSchema: Record<string, WidgetSchema> = {
   [Money.componentName]: money,
@@ -35,4 +37,5 @@ export const componentsSchema: Record<string, WidgetSchema> = {
   [Team.componentName]: team,
   [Effect.componentName]: effect,
   [Tier.componentName]: tier,
+  [Level.componentName]: level,
 };

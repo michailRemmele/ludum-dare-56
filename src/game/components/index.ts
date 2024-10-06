@@ -9,6 +9,7 @@ export { Team } from './team';
 export { ActiveEffects } from './active-effects';
 export { Effect } from './effect';
 export { Tier } from './tier';
+export { Level } from './level';
 
 export type {
   EffectType,

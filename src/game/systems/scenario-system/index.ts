@@ -7,14 +7,18 @@ import type {
   UpdateOptions,
 } from 'remiz';
 
+import { Level } from '../../components';
 import { ENEMY_SPAWNER_ID } from '../../../consts/templates';
 import * as EventType from '../../events';
 
-import { waves } from './waves';
+import { levels } from './waves';
+import { Wave } from './types';
 
 const INITIAL_TIMEOUT = 10_000;
 const PACK_TIMEOUT = 500;
 const WAVE_TIMEOUT = 10_000;
+
+const PLAYER_ACTOR_NAME = 'Player';
 
 export class ScenarioSystem extends System {
   private scene: Scene;
@@ -23,7 +27,10 @@ export class ScenarioSystem extends System {
   private currentPack: number;
   private timeout: number;
 
+  private level: Array<Wave>;
+  private spawnerCount: number;
   private isSpawnEnd: boolean;
+  private waveEnemiesLeft: number;
   private enemiesLeft: number;
 
   constructor(options: SystemOptions) {
@@ -37,24 +44,28 @@ export class ScenarioSystem extends System {
 
     this.isSpawnEnd = false;
 
-    const spawnerCount = this.scene.children.reduce((acc, actor) => {
+    const player = this.scene.getEntityByName(PLAYER_ACTOR_NAME);
+
+    if (!player) {
+      throw new Error('Player actor not fount');
+    }
+
+    const levelComponent = player.getComponent(Level);
+    this.level = levels[levelComponent.index];
+
+    this.spawnerCount = this.scene.children.reduce((acc, actor) => {
       if (actor.templateId === ENEMY_SPAWNER_ID) {
         return acc + 1;
       }
       return acc;
     }, 0);
 
-    this.enemiesLeft = spawnerCount * waves.reduce((count, stage) => {
-      return count + stage.reduce(
-        (waveCount, wave) => waveCount + Object.values(wave).reduce(
-          (creatureCount, value) => creatureCount + value,
-          0,
-        ),
-        0,
-      );
+    this.enemiesLeft = this.level.reduce((count, wave) => {
+      return count + this.countWaveEnemies(wave);
     }, 0);
+    this.waveEnemiesLeft = 0;
 
-    this.scene.data.totalWaves = waves.length;
+    this.scene.data.totalWaves = this.level.length;
   }
 
   mount(): void {
@@ -67,11 +78,29 @@ export class ScenarioSystem extends System {
 
   private handleDeathEnemy = (): void => {
     this.enemiesLeft -= 1;
+    this.waveEnemiesLeft -= 1;
+
+    if (this.waveEnemiesLeft === 0) {
+      this.timeout = WAVE_TIMEOUT;
+    }
 
     if (this.enemiesLeft === 0) {
+      this.isSpawnEnd = true;
       this.scene.dispatchEvent(EventType.GameOver, { isWin: true });
     }
   };
+
+  private isWaveSpawnCompleted(): boolean {
+    return this.currentPack === this.level[this.currentWave].length;
+  }
+
+  private isWaveCompleted(): boolean {
+    return this.isWaveSpawnCompleted() && this.waveEnemiesLeft === 0;
+  }
+
+  private countWaveEnemies(wave: Wave): number {
+    return this.spawnerCount * wave.length;
+  }
 
   update(options: UpdateOptions): void {
     if (this.isSpawnEnd) {
@@ -84,30 +113,22 @@ export class ScenarioSystem extends System {
     if (this.timeout > 0) {
       return;
     }
-    if (this.currentWave === -1 || this.currentPack === waves[this.currentWave].length) {
+    if (this.currentWave === -1 || this.isWaveCompleted()) {
       this.currentWave += 1;
       this.currentPack = 0;
+      this.waveEnemiesLeft = this.countWaveEnemies(this.level[this.currentWave]);
       this.scene.dispatchEvent(EventType.NextWave);
     }
 
-    const pack = waves[this.currentWave][this.currentPack];
-
-    for (const templateId in pack) {
+    if (!this.isWaveSpawnCompleted()) {
+      const pack = this.level[this.currentWave][this.currentPack];
       this.scene.dispatchEvent(EventType.SpawnCreature, {
-        templateId,
-        quantity: pack[templateId],
+        templateId: pack,
+        quantity: 1,
       });
-    }
 
-    this.currentPack += 1;
-    this.timeout = PACK_TIMEOUT;
-
-    if (this.currentPack === waves[this.currentWave].length) {
-      this.timeout = WAVE_TIMEOUT;
-
-      if (this.currentWave === waves.length - 1) {
-        this.isSpawnEnd = true;
-      }
+      this.currentPack += 1;
+      this.timeout = PACK_TIMEOUT;
     }
   }
 }

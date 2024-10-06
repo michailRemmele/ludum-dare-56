@@ -39,6 +39,9 @@
   "components.tier.title": "Tier",
   "components.tier.index.title": "Index",
 
+  "components.level.title": "Level",
+  "components.level.index.title": "Index",
+
   "components.effect.title": "Effect",
   "components.effect.script.title": "Script",
   "components.effect.type.title": "Type",
