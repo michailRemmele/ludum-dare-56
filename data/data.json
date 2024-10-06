@@ -197,8 +197,8 @@
             {
               "name": "Transform",
               "config": {
-                "offsetX": -180,
-                "offsetY": -60,
+                "offsetX": -192,
+                "offsetY": -84,
                 "offsetZ": 0,
                 "rotation": 0,
                 "scaleX": 1,
@@ -3035,8 +3035,8 @@
           "name": "Sprite",
           "config": {
             "src": "house.png",
-            "width": 120,
-            "height": 120,
+            "width": 144,
+            "height": 168,
             "slice": 1,
             "rotation": 0,
             "sortCenter": [
