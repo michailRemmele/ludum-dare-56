@@ -42,4 +42,8 @@ export const level1: Array<Wave> = [
 ];
 export const levels = [
   level1,
+  level1,
+  level1,
+  level1,
+  level1,
 ];
