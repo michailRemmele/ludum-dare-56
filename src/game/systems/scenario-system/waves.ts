@@ -1,4 +1,4 @@
-import { ENEMY_ID } from '../../../consts/templates';
+import { ENEMY_ID, ENEMY_2_ID, ENEMY_3_ID } from '../../../consts/templates';
 
 import type { Wave } from './types';
 
