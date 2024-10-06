@@ -1,21 +1,19 @@
 import { Actor, MathOps, System, Transform, UpdateOptions } from "remiz";
-import { ActorCollection, Scene, SystemOptions } from "remiz";
+import { ActorCollection, SystemOptions } from "remiz";
 import { RemoveActor, RemoveActorEvent } from "remiz/events";
 
 import { TrackSegment, Movement } from "../../components";
 import * as EventType from "../../events";
 
 export class TrackSystem extends System {
-  private scene: Scene;
   private segmentsCollection: ActorCollection;
   private movementCollection: ActorCollection;
-  private angles: Record<string, number>;
-  private nextSegment: string = "";
+
+  private angles: Record<Actor["id"], number>;
+  private passes: Record<Actor["id"], Set<Actor["id"]>>;
 
   constructor(options: SystemOptions) {
     super();
-
-    this.scene = options.scene;
 
     this.segmentsCollection = new ActorCollection(options.scene, {
       components: [TrackSegment],
@@ -30,6 +28,7 @@ export class TrackSystem extends System {
     });
 
     this.angles = {};
+    this.passes = {};
   }
 
   private handleRemoveActor = (event: RemoveActorEvent): void => {
@@ -44,19 +43,20 @@ export class TrackSystem extends System {
   }
 
   update(options: UpdateOptions): void {
-    const segments: (Pick<Transform, "offsetX" | "offsetY"> & Pick<TrackSegment, "next">)[] = [];
+    const segments: (Pick<Transform, "offsetX" | "offsetY"> &
+      Pick<TrackSegment, "next"> &
+      Pick<Actor, "id">)[] = [];
 
     this.segmentsCollection.forEach((actor) => {
       const { next } = actor.getComponent(TrackSegment);
       const { offsetX, offsetY } = actor.getComponent(Transform);
 
-      segments.push({ offsetX, offsetY, next });
+      segments.push({ offsetX, offsetY, next, id: actor.id });
     });
 
-    this.movementCollection.forEach((actor, i) => {
+    this.movementCollection.forEach((actor) => {
       const transform = actor.getComponent(Transform);
 
-      // Ищем пересечения центов
       const intersectedSegment = segments.find(
         (segment) =>
           Math.abs(segment.offsetX - transform.offsetX) < 1 &&
@@ -64,8 +64,13 @@ export class TrackSystem extends System {
       );
 
       if (intersectedSegment) {
+        this.passes[intersectedSegment.id] ??= new Set();
+        const nextSegmentIndex =
+          this.passes[intersectedSegment.id].size %
+          intersectedSegment.next.length;
+
         const nextSegment = this.segmentsCollection.getById(
-          intersectedSegment.next[i % intersectedSegment.next.length]
+          intersectedSegment.next[nextSegmentIndex]
         );
 
         if (!nextSegment) {
@@ -86,6 +91,9 @@ export class TrackSystem extends System {
         this.angles[actor.id] = angle;
 
         actor.dispatchEvent(EventType.Movement, { angle });
+
+        this.passes[intersectedSegment.id].add(actor.id);
+
         return;
       }
 

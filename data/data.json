@@ -956,6 +956,26 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "3a5c009e-c33c-408a-8a60-fe22d2839b69",
+          "templateId": "d515c668-bdac-424b-92b7-ca62b8b772cc",
+          "fromTemplate": true,
+          "name": "Enemy Spawner 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
         }
       ]
     }
