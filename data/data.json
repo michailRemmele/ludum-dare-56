@@ -2019,6 +2019,1779 @@
           "children": []
         }
       ]
+    },
+    {
+      "id": "91d315cc-38b6-4250-8cdb-c94a489ca3e7",
+      "name": "Demo Level copy",
+      "actors": [
+        {
+          "id": "2e52cafc-b03a-47ac-913e-5886908dad02",
+          "name": "Background",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "background",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#99cc66",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "585277ec-0325-4b27-8d93-bb5bf97aebaf",
+          "name": "Player",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Camera",
+              "config": {
+                "zoom": 1
+              }
+            },
+            {
+              "name": "Money",
+              "config": {
+                "value": 200
+              }
+            },
+            {
+              "name": "ScriptBundle",
+              "config": {
+                "scripts": [
+                  {
+                    "id": "9ee1a559-a98c-4e89-b75d-1dd438aa7205",
+                    "name": "PlayerScript",
+                    "options": {}
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Level",
+              "config": {
+                "index": 2
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "91b2778d-9806-4a8b-a84f-df78245638d4",
+          "templateId": "f14f1694-7865-4783-9b21-774bde2ad9b3",
+          "fromTemplate": true,
+          "name": "Base",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -180,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ac3595c6-9442-4144-838a-89749db95536",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 0",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -228,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "08055cf2-fa01-4ea7-912e-e5c62dea561f"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "08055cf2-fa01-4ea7-912e-e5c62dea561f",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "a60ee32a-26c6-41dc-af8b-431a0deb309a"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a60ee32a-26c6-41dc-af8b-431a0deb309a",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "3a95a68a-f686-4510-a4ba-44fc319bb19d"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3a95a68a-f686-4510-a4ba-44fc319bb19d",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "b1211694-8a91-478e-a15f-aea8d3567825"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b1211694-8a91-478e-a15f-aea8d3567825",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -228,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "f766ad28-610e-4ec1-aa42-d66f7067b76c"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "8ddec13d-766e-4d69-b282-9110c16e00d4",
+          "name": "Meadow",
+          "components": [
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "bg-1.png",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "meadow",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d412b738-e031-498c-91af-923650d0439d",
+          "templateId": "d515c668-bdac-424b-92b7-ca62b8b772cc",
+          "fromTemplate": true,
+          "name": "Enemy Spawner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -228,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a27283d6-5faa-401c-88bd-84182b00b887",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -168,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c0f99525-ba4d-4dae-bd9c-8bd26512e868",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -24,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "305891bb-45df-4eb3-b093-dc7451c150de",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 72,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b97d10a1-e759-44ef-8d93-cbe7a5bc0f27",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 72,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "15c0d266-f3d9-458a-befb-f37852782519",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -72,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "009bf235-753c-493f-aac5-ea114b732db6",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 48,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e0f3e618-9dda-4a8b-9322-b55afa655aa6",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "668a1250-2b81-4776-8532-ecff1cc44405",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 270,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "98bb9980-40f8-4332-9132-1a688df91990",
+      "name": "Demo Level copy copy",
+      "actors": [
+        {
+          "id": "99136792-0959-41d5-bf11-d34e0d6e44fa",
+          "name": "Background",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "background",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#99cc66",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "585277ec-0325-4b27-8d93-bb5bf97aebaf",
+          "name": "Player",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Camera",
+              "config": {
+                "zoom": 1
+              }
+            },
+            {
+              "name": "Money",
+              "config": {
+                "value": 200
+              }
+            },
+            {
+              "name": "ScriptBundle",
+              "config": {
+                "scripts": [
+                  {
+                    "id": "9ee1a559-a98c-4e89-b75d-1dd438aa7205",
+                    "name": "PlayerScript",
+                    "options": {}
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Level",
+              "config": {
+                "index": 2
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ada28613-bca8-493b-a61e-b09e710a548e",
+          "templateId": "f14f1694-7865-4783-9b21-774bde2ad9b3",
+          "fromTemplate": true,
+          "name": "Base",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": -180,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "01a0702a-f20c-436a-bdcb-1253aa9ee507",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 0",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 228,
+                "offsetY": 12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "fc4c33d7-0669-4762-9a2e-8474dc55f7c8"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "70d3bcb6-6e83-433e-894d-774281f09f6c",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 228,
+                "offsetY": -132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "87828801-fed6-4972-b266-eff69f577610"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "fc4c33d7-0669-4762-9a2e-8474dc55f7c8",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": 12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "72c751f5-d1e8-4343-ae57-97ba12b5ad4b"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "87828801-fed6-4972-b266-eff69f577610",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": -132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "fc4c33d7-0669-4762-9a2e-8474dc55f7c8"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "72c751f5-d1e8-4343-ae57-97ba12b5ad4b",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "3db844e1-e5cf-416c-9e29-74d94d1af600"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a254eb6e-3ac9-4294-8d5f-c6346af0714b",
+          "name": "Meadow",
+          "components": [
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "bg-1.png",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "meadow",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ed59d917-99dd-40bc-a421-f2e8683c062f",
+          "templateId": "d515c668-bdac-424b-92b7-ca62b8b772cc",
+          "fromTemplate": true,
+          "name": "Enemy Spawner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 228,
+                "offsetY": 12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3db844e1-e5cf-416c-9e29-74d94d1af600",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 5",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "0b5b402a-5c89-4a2c-87a9-0c149a1316a0"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "0b5b402a-5c89-4a2c-87a9-0c149a1316a0",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 6",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": -228,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "null"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6a778bcd-e3ad-4b31-8f0d-a2553b595770",
+          "templateId": "d515c668-bdac-424b-92b7-ca62b8b772cc",
+          "fromTemplate": true,
+          "name": "Enemy Spawner 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 228,
+                "offsetY": -132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6a7dd647-2515-4fea-83d8-a099dea4be54",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road copy",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "road/road_v-1.png",
+                "width": 24,
+                "height": 288,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "meadow",
+                "fit": "repeat",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "86ce3bd5-5403-4706-8eb8-aaa4f89b32a0",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 168,
+                "offsetY": -132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3d6c5e8e-00f7-4a95-9237-36f2540f402f",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 168,
+                "offsetY": 12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6827d8e2-21c7-45d7-a9ca-ea3516c15c43",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": -48,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "53b0b44c-125e-4f74-8a6f-bd34fa2e0ad6",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": 48,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "98b33d06-3d01-48c3-b625-19ffbc837211",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": 48,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "7352a5ae-8206-4526-a40b-f09279a13be8",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": -96,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b89687bd-71d2-46f2-9a51-186919da801a",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "fa4eadc3-5dac-471f-b14e-575d9134fef9",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": -132,
+                "offsetZ": 0,
+                "rotation": 90,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c33fbe73-e164-4c99-a298-3038281086f4",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom copy",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 84,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 270,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "66a7a666-05b0-45ad-9721-169e64657218",
+          "templateId": "9668d98d-787f-42d0-a738-12924045899b",
+          "fromTemplate": true,
+          "name": "UI Track Corner Bottom copy copy",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 360,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "4f90ea90-7e44-4de0-9d3f-b3079ea3bb8a",
+      "name": "Demo Level copy copy copy",
+      "actors": [
+        {
+          "id": "4feca72b-3d06-4983-8d26-9189db4e9efd",
+          "name": "Background",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "background",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#99cc66",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "585277ec-0325-4b27-8d93-bb5bf97aebaf",
+          "name": "Player",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Camera",
+              "config": {
+                "zoom": 1
+              }
+            },
+            {
+              "name": "Money",
+              "config": {
+                "value": 200
+              }
+            },
+            {
+              "name": "ScriptBundle",
+              "config": {
+                "scripts": [
+                  {
+                    "id": "9ee1a559-a98c-4e89-b75d-1dd438aa7205",
+                    "name": "PlayerScript",
+                    "options": {}
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Level",
+              "config": {
+                "index": 2
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "9c001f7d-2093-44ae-b581-e299cc46b458",
+          "templateId": "f14f1694-7865-4783-9b21-774bde2ad9b3",
+          "fromTemplate": true,
+          "name": "Base",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -180,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f9a5e598-d979-4ccc-9e31-3aa91c772e76",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 0",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 228,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "905bf7ae-7941-4676-8551-2bfee4a247f4"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "905bf7ae-7941-4676-8551-2bfee4a247f4",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "d0094d44-27f9-4a37-8415-bd3aa40f1f0b",
+                  "813365e9-a281-4b77-a9aa-1a4525ae1365"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "813365e9-a281-4b77-a9aa-1a4525ae1365",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "78093d61-751b-4c56-a179-82aa15dd162f"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d0094d44-27f9-4a37-8415-bd3aa40f1f0b",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "942d97ff-0bc6-4ab6-877d-455cbc428bb4"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "78093d61-751b-4c56-a179-82aa15dd162f",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "16698241-8a21-4a21-8fb7-e7222397cd85"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "11315f8e-de38-4b0d-a0b0-b369fb552747",
+          "name": "Meadow",
+          "components": [
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "bg-1.png",
+                "width": 480,
+                "height": 480,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "meadow",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "2e277a85-15a1-4749-952e-518a21494d20",
+          "templateId": "d515c668-bdac-424b-92b7-ca62b8b772cc",
+          "fromTemplate": true,
+          "name": "Enemy Spawner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 228,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "942d97ff-0bc6-4ab6-877d-455cbc428bb4",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 5",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "16698241-8a21-4a21-8fb7-e7222397cd85"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "16698241-8a21-4a21-8fb7-e7222397cd85",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 6",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "0000e46c-2d28-464d-a4ef-029db36ddad6"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "0000e46c-2d28-464d-a4ef-029db36ddad6",
+          "templateId": "fb4c3580-ce48-4d24-807c-94956de79311",
+          "fromTemplate": true,
+          "name": "Track 7",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "TrackSegment",
+              "config": {
+                "next": [
+                  "null"
+                ]
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "cd54693d-3655-4c82-8259-d2e408c75135",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -48,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "cca28d8a-8171-4300-8114-2cb99bc89c39",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 72,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "8eb9c311-2570-4da6-9e6f-df00e519fb2f",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -48,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d31fae49-fb7e-4b51-a661-6cbdfe8d113a",
+          "templateId": "275eebe3-a612-4cfd-9c15-9875c6341f9f",
+          "fromTemplate": true,
+          "name": "Horizontal Road 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 72,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3d05c2b2-8b0d-4c1d-9e95-8bd36eb9220d",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "638f3a22-60cc-47a7-b42f-fee0b9fd9ea3",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "50da2a6d-8335-48cc-8295-13b45faccfcf",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 168,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "27502f72-f3ab-4606-b9ea-1af6473a9cc8",
+          "templateId": "9cadb85a-be47-4134-8193-76aa30de0506",
+          "fromTemplate": true,
+          "name": "Vertical Road 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -120,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "45c480f0-8d4c-41e6-8057-daa7eed18859",
+          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+          "fromTemplate": true,
+          "name": "UI Track Corner Top",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 90,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "40ad1a6a-4829-425c-910e-82f940a90cb3",
+          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+          "fromTemplate": true,
+          "name": "UI Track Corner Top 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "54d21e9a-3cac-4d80-90cf-0e6378fb05f2",
+          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+          "fromTemplate": true,
+          "name": "UI Track Corner Top 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 270,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "51c9eb1d-a90d-4781-b7c6-428c7e4faeea",
+          "templateId": "2d33be7b-5184-4b2d-98cd-6119c637ef98",
+          "fromTemplate": true,
+          "name": "UI Track Corner Top 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
     }
   ],
   "templates": [
@@ -2248,7 +4021,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "units",
+            "sortingLayer": "decorations",
             "fit": "stretch",
             "material": {
               "type": "basic",
@@ -2344,7 +4117,7 @@
               "options": {
                 "blending": "normal",
                 "color": "#ff9900",
-                "opacity": 1
+                "opacity": 0
               }
             }
           }
@@ -2381,7 +4154,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "decorations",
+            "sortingLayer": "tracks",
             "fit": "stretch",
             "material": {
               "type": "basic",
@@ -3008,7 +4781,7 @@
           "name": "Sprite",
           "config": {
             "src": "road/road_h-1.png",
-            "width": 24,
+            "width": 144,
             "height": 24,
             "slice": 1,
             "rotation": 0,
@@ -3018,7 +4791,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "decorations",
+            "sortingLayer": "tracks",
             "fit": "repeat",
             "material": {
               "type": "basic",
@@ -3053,7 +4826,7 @@
           "config": {
             "src": "road/road_v-2.png",
             "width": 24,
-            "height": 24,
+            "height": 144,
             "slice": 1,
             "rotation": 0,
             "sortCenter": [
@@ -3062,7 +4835,7 @@
             ],
             "flipX": false,
             "flipY": false,
-            "sortingLayer": "decorations",
+            "sortingLayer": "tracks",
             "fit": "repeat",
             "material": {
               "type": "basic",
@@ -3455,8 +5228,10 @@
       "value": [
         "background",
         "meadow",
+        "tracks",
         "decorations",
-        "units"
+        "units",
+        "base"
       ]
     }
   ],
