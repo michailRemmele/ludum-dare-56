@@ -11,6 +11,8 @@ export const EnemyDeath = 'EnemyDeath';
 export const NextWave = 'NextWave';
 export const MoneyUpdate = 'MoneyUpdate';
 export const BuildTower = 'BuildTower';
+export const Select = 'Select';
+export const Unselect = 'Unselect';
 export const AddEffect = 'AddEffect';
 export const RemoveEffect = 'RemoveEffect';
 export const ApplyEffect = 'ApplyEffect';
@@ -48,6 +50,8 @@ declare module 'remiz' {
     [Attack]: ActorEvent
     [Kill]: KillEvent
     [Damage]: DamageEvent
+    [Select]: ActorEvent
+    [Unselect]: ActorEvent
     [AddEffect]: AddEffectEvent
     [RemoveEffect]: RemoveEffectEvent
     [ApplyEffect]: ActorEvent

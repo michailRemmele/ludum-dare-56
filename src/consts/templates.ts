@@ -8,3 +8,4 @@ export const CONSTRUCTION_SPOT_ID = 'e54cd27a-e9f5-4f8c-b829-8300f998d504';
 export const BASE_TOWER_ID = 'b5ed0a30-1f38-460e-8582-46a776de7afb';
 export const AOE_TOWER_ID = '0bd10eee-4ad4-47f9-ba0b-88866efc932f';
 export const FREEZE_TOWER_ID = 'e28dc035-850c-48cd-872c-b65ac8d6a437';
+export const TOWER_SELECTION_ID = '742dd0f0-ee58-4680-b858-d8d61afa0c2d';
