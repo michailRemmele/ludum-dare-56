@@ -119,7 +119,7 @@ export class RangeAttack implements Attack {
     this.lifetime -= deltaTime;
 
     if (this.lifetime <= 0) {
-      this.shot.dispatchEvent(EventType.Kill);
+      this.shot.dispatchEvent(EventType.Kill, { force: true });
       this.isFinished = true;
     }
   }

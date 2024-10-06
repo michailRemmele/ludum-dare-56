@@ -1,16 +1,20 @@
 import { Component } from 'remiz';
 
+interface MoneyConfig {
+  value: number
+}
+
 export class Money extends Component {
   value: number;
 
-  constructor() {
+  constructor(conig: MoneyConfig) {
     super();
 
-    this.value = 0;
+    this.value = conig.value;
   }
 
   clone(): Money {
-    return new Money();
+    return new Money({ value: this.value });
   }
 }
 

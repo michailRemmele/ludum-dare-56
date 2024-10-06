@@ -34,6 +34,7 @@
   "components.trackSegment.next.title": "Next",
 
   "components.money.title": "Money",
+  "components.money.value.title": "Value",
 
   "components.effect.title": "Effect",
   "components.effect.script.title": "Script",

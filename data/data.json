@@ -163,7 +163,9 @@
             },
             {
               "name": "Money",
-              "config": {}
+              "config": {
+                "value": 200
+              }
             },
             {
               "name": "ScriptBundle",
@@ -412,66 +414,6 @@
                 "next": [
                   "null"
                 ]
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "ba75e16c-30a8-4425-b6ac-8a4075bd1e62",
-          "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
-          "fromTemplate": true,
-          "name": "Tower",
-          "components": [
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": -132,
-                "offsetY": 132,
-                "offsetZ": 0,
-                "rotation": 0,
-                "scaleX": 1,
-                "scaleY": 1
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "a3c163fa-4f6c-406e-93a5-50f65a283c8e",
-          "templateId": "b5ed0a30-1f38-460e-8582-46a776de7afb",
-          "fromTemplate": true,
-          "name": "Tower 2",
-          "components": [
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": 108,
-                "offsetY": 132,
-                "offsetZ": 0,
-                "rotation": 0,
-                "scaleX": 1,
-                "scaleY": 1
-              }
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "78bc683e-f359-4b28-a566-3b9c233c5171",
-          "templateId": "0bd10eee-4ad4-47f9-ba0b-88866efc932f",
-          "fromTemplate": true,
-          "name": "Tower (explosive)",
-          "components": [
-            {
-              "name": "Transform",
-              "config": {
-                "offsetX": -12,
-                "offsetY": 132,
-                "offsetZ": 0,
-                "rotation": 0,
-                "scaleX": 1,
-                "scaleY": 1
               }
             }
           ],
@@ -938,16 +880,236 @@
           "children": []
         },
         {
-          "id": "e657b757-9cbc-45e5-ae26-b49462311590",
-          "templateId": "e28dc035-850c-48cd-872c-b65ac8d6a437",
+          "id": "49ee9ecc-7cb3-4f24-bb71-899bec871b2b",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
           "fromTemplate": true,
-          "name": "Tower Freeze",
+          "name": "Construction Spot",
           "components": [
             {
               "name": "Transform",
               "config": {
-                "offsetX": -108,
+                "offsetX": -156,
+                "offsetY": 60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "5b2aa601-4aa5-4eb2-aa40-d98d39653e2b",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -156,
+                "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "501c164f-66ea-45a5-b0bd-cf4c9a6fc991",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b1014fdf-5887-4ac7-a2c2-b3e0550b0ee8",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "506728b5-6a58-4ddd-8164-733b45c003e3",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 132,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c3a4f808-4ddd-447c-8056-835cc403ba50",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 5",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 132,
+                "offsetY": -36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d168ebb7-254f-4827-bcb6-9eb6eb397dce",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 6",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -156,
                 "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "1584aaeb-a92a-4f09-8683-c064bf475e50",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 7",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -132,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ad576f31-bc69-4767-b536-6f4bdcc6c860",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 8",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -36,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "14c03fe1-756a-4aec-bdb0-1ec82c8ebc06",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 9",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": 132,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c7a44a2a-f947-474a-832a-cda51d805492",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 10",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -84,
+                "offsetY": -180,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "8f881e54-028c-4954-ae64-169010048a81",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 11",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -60,
+                "offsetY": -180,
                 "offsetZ": 0,
                 "rotation": 0,
                 "scaleX": 1,
@@ -1724,6 +1886,17 @@
           "config": {
             "index": 0
           }
+        },
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
         }
       ],
       "children": []
@@ -2235,6 +2408,50 @@
               "duration": 1000
             },
             "script": "freeze"
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+      "name": "Construction Spot",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "construction-spot.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "decorations",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
           }
         }
       ],
