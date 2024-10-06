@@ -2499,6 +2499,106 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "dd86ea9f-ad3b-40e6-92d3-6d3656ad8ce8",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -180,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6bbbf9e7-a43b-4c40-a0e2-725309466048",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 180,
+                "offsetY": 60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "43307308-be55-468a-bae7-f50ac81bcd5a",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -36,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "05bc93a7-13ad-4b85-8682-54335a3dac72",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 132,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "43bc4306-32da-421f-8496-564b1e3d4cf7",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 108,
+                "offsetY": 156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
         }
       ]
     },
@@ -3137,6 +3237,106 @@
                 "offsetY": 132,
                 "offsetZ": 0,
                 "rotation": 360,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "dac9c416-efc5-4d18-b9f3-cdd9fd382be0",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 180,
+                "offsetY": -156,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a45a7872-ba8f-40af-ba41-6e551fd9744a",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 156,
+                "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "241cec32-2048-42b9-98f6-25a24a706985",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 60,
+                "offsetY": 12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "5e986b81-6e37-4b04-ae0e-eaf192e725b5",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "43ccbb39-a840-4264-93c9-534ea551199a",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -60,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
                 "scaleX": 1,
                 "scaleY": 1
               }
@@ -3782,6 +3982,106 @@
               "config": {
                 "offsetX": -132,
                 "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "947729eb-a9ab-4e91-8ff8-ecced1889336",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": 180,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "0b4ecbea-bee8-40d6-ad4c-8dda7ca739ab",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 36,
+                "offsetY": -84,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4955793f-4573-4f39-a1af-dcc0292b39be",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 2",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -12,
+                "offsetY": -84,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "1019c9c9-618f-472a-adf0-8a58ca865db1",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 3",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -156,
+                "offsetY": 60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "42ade84f-2dc3-45a8-bbd7-7cc84b99680e",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 180,
+                "offsetY": -36,
                 "offsetZ": 0,
                 "rotation": 0,
                 "scaleX": 1,
