@@ -1,6 +1,6 @@
 export const ENEMY_ID = '375d21eb-5faf-4e93-b039-dfc8e738ef0e';
-export const ENEMY_2_ID = '7e7c150c-22f3-4253-9290-a411af050512';
-export const ENEMY_3_ID = '16e42d96-1d7f-4cf0-80ec-15b23fb94444';
+export const ENEMY_2_ID = '110b8062-792f-466b-9942-61578db963d0';
+export const ENEMY_3_ID = '45295dab-8a05-470a-ad24-9ab7351e3d61';
 export const MELEE_HIT_ID = '5d2a2389-144f-4bc9-abf7-2fcdd8f77b5d';
 export const BASE_ID = 'f14f1694-7865-4783-9b21-774bde2ad9b3';
 export const AOE_PROJECTILE_ID = '722b0359-b17e-4a92-9607-e3290dbb539e';

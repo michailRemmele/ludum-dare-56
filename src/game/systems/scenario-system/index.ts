@@ -14,7 +14,7 @@ import * as EventType from '../../events';
 import { levels } from './waves';
 import { Wave } from './types';
 
-const INITIAL_TIMEOUT = 1_000;
+const INITIAL_TIMEOUT = 5_000;
 const PACK_TIMEOUT = 500;
 const WAVE_TIMEOUT = 10_000;
 
