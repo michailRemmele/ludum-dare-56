@@ -195,7 +195,10 @@ export const ConstructionMenu: FC = () => {
                     key={tower.id}
                     className="construction-menu__button"
                     type="button"
-                    onClick={() => handleBuild(tower)}
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      handleBuild(tower);
+                    }}
                     disabled={money < tower.cost}
                   >
                     {tower.name[0]}

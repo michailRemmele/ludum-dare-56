@@ -22,7 +22,10 @@ export const UpgrageItem: FC<Props> = ({ money, upgradeTier, onClick }) => {
         <button
           className="construction-menu__button"
           type="button"
-          onClick={() => onClick(upgradeTier)}
+          onClick={(event) => {
+            event.stopPropagation();
+            onClick(upgradeTier);
+          }}
           disabled={money < upgradeTier.cost}
         >
           {upgradeTier.name}
