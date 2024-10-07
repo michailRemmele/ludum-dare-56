@@ -28,24 +28,27 @@ const SPOTS = [CONSTRUCTION_SPOT_ID, BASE_TOWER_ID, AOE_TOWER_ID, FREEZE_TOWER_I
 const TOWERS: Tower[] = [
   {
     id: BASE_TOWER_ID,
-    name: 'base',
+    name: 'Tire Swan',
     cost: 50,
+    imageUrl: './images/tire-swan-icon.png',
   },
   {
     id: AOE_TOWER_ID,
-    name: 'aoe',
+    name: 'Grill',
     cost: 100,
+    imageUrl: './images/grill-icon.png',
   },
   {
     id: FREEZE_TOWER_ID,
-    name: 'freeze',
+    name: 'Fridge',
     cost: 75,
+    imageUrl: './images/fridge-icon.png',
   },
 ];
 const TIERS: Record<string, TierUpgrade[]> = {
   [BASE_TOWER_ID]: [
     {
-      name: 'II',
+      name: 'Tier 2',
       weapon: {
         damage: 25,
         range: 12,
@@ -53,7 +56,7 @@ const TIERS: Record<string, TierUpgrade[]> = {
       cost: 50,
     },
     {
-      name: 'III',
+      name: 'Tier 3',
       weapon: {
         damage: 25,
         range: 12,
@@ -63,7 +66,7 @@ const TIERS: Record<string, TierUpgrade[]> = {
   ],
   [AOE_TOWER_ID]: [
     {
-      name: 'II',
+      name: 'Tier 2',
       weapon: {
         damage: 10,
         explosionRadius: 12,
@@ -71,7 +74,7 @@ const TIERS: Record<string, TierUpgrade[]> = {
       cost: 100,
     },
     {
-      name: 'III',
+      name: 'Tier 3',
       weapon: {
         damage: 10,
         explosionRadius: 12,
@@ -81,7 +84,7 @@ const TIERS: Record<string, TierUpgrade[]> = {
   ],
   [FREEZE_TOWER_ID]: [
     {
-      name: 'II',
+      name: 'Tier 2',
       weapon: {
         damage: 5,
         explosionRadius: 12,
@@ -89,7 +92,7 @@ const TIERS: Record<string, TierUpgrade[]> = {
       cost: 75,
     },
     {
-      name: 'III',
+      name: 'Tier 3',
       weapon: {
         damage: 5,
         explosionRadius: 12,
@@ -201,10 +204,15 @@ export const ConstructionMenu: FC = () => {
                     }}
                     disabled={money < tower.cost}
                   >
-                    {tower.name[0]}
-                    <span className="construction-menu__cost">
-                      {tower.cost}
-                    </span>
+                    <div className="construction-menu__wrapper">
+                      <div className="construction-menu__tower">
+                        <img className="construction-menu__image" src={tower.imageUrl} alt={tower.name} />
+                        <span className="construction-menu__label">{tower.name}</span>
+                      </div>
+                      <span className="construction-menu__cost">
+                        {tower.cost}
+                      </span>
+                    </div>
                   </button>
                 ))}
               </div>

@@ -18,7 +18,7 @@ export const UpgrageItem: FC<Props> = ({ money, upgradeTier, onClick }) => {
   return (
     <>
       <h4 className="consturction-menu__title">Upgrade</h4>
-      <div className="construction-menu__list">
+      <div className="construction-menu__list construction-menu__list_upgrage">
         <button
           className="construction-menu__button"
           type="button"
@@ -28,10 +28,19 @@ export const UpgrageItem: FC<Props> = ({ money, upgradeTier, onClick }) => {
           }}
           disabled={money < upgradeTier.cost}
         >
-          {upgradeTier.name}
-          <span className="construction-menu__cost">
-            {upgradeTier.cost}
-          </span>
+          <div className="construction-menu__wrapper">
+            <div className="construction-menu__tower">
+              <img
+                className="construction-menu__image construction-menu__image_upgrage"
+                src="./images/upgrade-icon.png"
+                alt={upgradeTier.name}
+              />
+              <span className="construction-menu__label">{upgradeTier.name}</span>
+            </div>
+            <span className="construction-menu__cost">
+              {upgradeTier.cost}
+            </span>
+          </div>
         </button>
       </div>
     </>
