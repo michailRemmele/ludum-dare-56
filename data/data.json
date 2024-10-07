@@ -3051,6 +3051,66 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "1663a56d-a3e6-4811-9e76-835a8beb5188",
+          "templateId": "03b6d53f-5712-48ba-9ca0-adfadd775791",
+          "fromTemplate": true,
+          "name": "Bridge",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "594337f1-6ab0-4113-9f01-4b001be05a83",
+          "templateId": "fd0f8b94-3ca6-4064-8d85-46b12dfdfcab",
+          "fromTemplate": true,
+          "name": "Bridge Corner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": 108,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "cbc513dc-50c5-472f-8eee-ca78f40b6c31",
+          "templateId": "fd0f8b94-3ca6-4064-8d85-46b12dfdfcab",
+          "fromTemplate": true,
+          "name": "Bridge Corner 1",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 12,
+                "offsetY": -60,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
         }
       ]
     }
@@ -5849,6 +5909,94 @@
           "children": []
         }
       ]
+    },
+    {
+      "id": "03b6d53f-5712-48ba-9ca0-adfadd775791",
+      "name": "Bridge",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "bridge-2.png",
+            "width": 24,
+            "height": 144,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "repeat",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "fd0f8b94-3ca6-4064-8d85-46b12dfdfcab",
+      "name": "Bridge Corner",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "bridge-corner.png",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#fff",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
     }
   ],
   "loaders": [],
