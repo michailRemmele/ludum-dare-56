@@ -3523,8 +3523,8 @@
           "config": {
             "type": "boxCollider",
             "collider": {
-              "sizeX": 72,
-              "sizeY": 72,
+              "sizeX": 96,
+              "sizeY": 136,
               "centerX": 0,
               "centerY": 0
             }
@@ -3731,32 +3731,6 @@
           }
         },
         {
-          "name": "Sprite",
-          "config": {
-            "src": "",
-            "width": 24,
-            "height": 24,
-            "slice": 1,
-            "rotation": 0,
-            "sortCenter": [
-              0,
-              0
-            ],
-            "flipX": false,
-            "flipY": false,
-            "sortingLayer": "units",
-            "fit": "stretch",
-            "material": {
-              "type": "basic",
-              "options": {
-                "blending": "normal",
-                "color": "#cccc99",
-                "opacity": 1
-              }
-            }
-          }
-        },
-        {
           "name": "ScriptBundle",
           "config": {
             "scripts": [
@@ -3791,9 +3765,320 @@
           "config": {
             "index": 0
           }
+        },
+        {
+          "name": "Animatable",
+          "config": {
+            "initialState": "a7b0db72-e750-4670-b34c-0d57cf71e8e4",
+            "states": [
+              {
+                "id": "a7b0db72-e750-4670-b34c-0d57cf71e8e4",
+                "name": "Idle",
+                "type": "group",
+                "speed": 0.5,
+                "transitions": [
+                  {
+                    "id": "3395520b-ec71-48ac-8acc-145f4431fe00",
+                    "state": "afde4b45-ddbe-40a2-9604-94095c6efbeb",
+                    "time": 0,
+                    "conditions": [
+                      {
+                        "id": "9ffbabe6-731b-4465-8fb1-e5ee24710fcb",
+                        "type": "event",
+                        "props": {
+                          "eventType": "Attack"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "substates": [
+                  {
+                    "id": "dc0d74dd-a08c-4993-96cc-084787e4237b",
+                    "name": "Left",
+                    "timeline": {
+                      "frames": [
+                        {
+                          "id": "449b06fb-4118-4ce3-9f2d-49641a3f0e3f",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 0
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": true
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0376f5db-ae87-4366-98a4-28e24607791d",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 1
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": true
+                            }
+                          ]
+                        },
+                        {
+                          "id": "db09d7a9-fa8b-4670-9fa1-acc7adecf2d8",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 2
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": true
+                            }
+                          ]
+                        }
+                      ],
+                      "looped": true
+                    },
+                    "x": 0
+                  },
+                  {
+                    "id": "e6847406-550b-49ff-90f1-7ad845f0c9dc",
+                    "name": "Right",
+                    "timeline": {
+                      "frames": [
+                        {
+                          "id": "449b06fb-4118-4ce3-9f2d-49641a3f0e3f",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 0
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": false
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0376f5db-ae87-4366-98a4-28e24607791d",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 1
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": false
+                            }
+                          ]
+                        },
+                        {
+                          "id": "db09d7a9-fa8b-4670-9fa1-acc7adecf2d8",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 2
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": false
+                            }
+                          ]
+                        }
+                      ],
+                      "looped": true
+                    },
+                    "x": -1
+                  }
+                ],
+                "pickMode": "1D",
+                "pickProps": {
+                  "x": "components.ViewDirection.x"
+                }
+              },
+              {
+                "id": "afde4b45-ddbe-40a2-9604-94095c6efbeb",
+                "name": "Attack",
+                "type": "group",
+                "speed": 0.75,
+                "transitions": [
+                  {
+                    "id": "134bca01-afae-4727-bf78-9cfc50fb422f",
+                    "state": "a7b0db72-e750-4670-b34c-0d57cf71e8e4",
+                    "time": 1,
+                    "conditions": []
+                  }
+                ],
+                "substates": [
+                  {
+                    "id": "784eb952-da2a-4dea-99ad-7035f82a7fe2",
+                    "name": "Left",
+                    "timeline": {
+                      "frames": [
+                        {
+                          "id": "449b06fb-4118-4ce3-9f2d-49641a3f0e3f",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 3
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": true
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0376f5db-ae87-4366-98a4-28e24607791d",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 4
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": true
+                            }
+                          ]
+                        }
+                      ],
+                      "looped": true
+                    },
+                    "x": 0
+                  },
+                  {
+                    "id": "106087b0-804a-40b4-a4ba-3ee5bc06e34d",
+                    "name": "Right",
+                    "timeline": {
+                      "frames": [
+                        {
+                          "id": "449b06fb-4118-4ce3-9f2d-49641a3f0e3f",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 3
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": false
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0376f5db-ae87-4366-98a4-28e24607791d",
+                          "fields": [
+                            {
+                              "id": "496fa199-9fee-42e5-9146-84588590af1d",
+                              "name": "children.Model.components.Sprite.currentFrame",
+                              "type": "number",
+                              "value": 4
+                            },
+                            {
+                              "id": "5e42f76c-0b20-4b77-8b08-106a40b76e09",
+                              "name": "children.Model.components.Sprite.flipX",
+                              "type": "boolean",
+                              "value": false
+                            }
+                          ]
+                        }
+                      ],
+                      "looped": true
+                    },
+                    "x": -1
+                  }
+                ],
+                "pickMode": "1D",
+                "pickProps": {
+                  "x": "components.ViewDirection.x"
+                }
+              }
+            ]
+          }
         }
       ],
-      "children": []
+      "children": [
+        {
+          "id": "fb1af3df-8158-4160-848e-ea64feff2ced",
+          "name": "Model",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": -12,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "tire-swan.png",
+                "width": 26,
+                "height": 48,
+                "slice": 5,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "units",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
     },
     {
       "id": "118dc229-ec6f-44d1-8721-077df5001a2b",
