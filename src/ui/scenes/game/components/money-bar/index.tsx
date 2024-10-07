@@ -33,7 +33,7 @@ export const MoneyBar: FC = () => {
   return (
     <div className="money-bar">
       <div className="money-bar__inner">
-        <img src="./images/money_icon.png" alt="" />
+        <img className="money-bar__icon" src="./images/money-icon.png" alt="Money" />
         <span className="money-bar__value">{value}</span>
       </div>
     </div>

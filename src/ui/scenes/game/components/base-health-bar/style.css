@@ -14,9 +14,3 @@
 
   height: 100%;
 }
-
-@media screen and (max-height: 481px), screen and (max-width: 768px) {
-  .health-bar {
-    height: 18px;
-  }
-}

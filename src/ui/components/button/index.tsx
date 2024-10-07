@@ -1,11 +1,11 @@
-import type { FC, ReactNode } from 'react';
+import type { FC, ReactNode, CSSProperties } from 'react';
 
 import './style.css';
 
 export interface ButtonProps {
   children: ReactNode
   onClick: () => void
-  styles: any
+  styles?: CSSProperties
 }
 
 export const Button: FC<ButtonProps> = ({ children, onClick, styles }) => (
