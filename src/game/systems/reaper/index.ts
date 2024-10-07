@@ -53,7 +53,7 @@ export class Reaper extends System {
   }
 
   handleDamage = (event: DamageEvent): void => {
-    const { target, value } = event;
+    const { target, value, keepAlive } = event;
 
     const health = target.getComponent(Health);
     if (!health) {
@@ -64,11 +64,16 @@ export class Reaper extends System {
 
     if (health.points <= 0) {
       health.points = 0;
-      target.dispatchEvent(EventType.Kill);
+      target.dispatchEvent(EventType.Kill, { keepAlive });
     }
   };
 
   handleKill = (value: Actor | KillEvent): void => {
+    if (!(value instanceof Actor) && value.keepAlive) {
+      value.target.removeComponent(Health);
+      return;
+    }
+
     const actor = value instanceof Actor ? value : value.target;
 
     actor.getComponents().forEach((component) => {

@@ -21,6 +21,10 @@ export const BaseHealthBar: FC = () => {
 
       if (target.templateId === BASE_ID) {
         const health = target.getComponent(Health);
+
+        if (!health) {
+          return;
+        }
         setPoints(health.points);
         setMaxPoints(health.maxPoints);
       }

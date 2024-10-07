@@ -40,7 +40,7 @@ export class BaseScript extends Script {
     }
 
     actor.dispatchEvent(EventType.Kill, { force: true });
-    this.actor.dispatchEvent(EventType.Damage, { value: DAMAGE_PER_ENEMY });
+    this.actor.dispatchEvent(EventType.Damage, { value: DAMAGE_PER_ENEMY, keepAlive: true });
   };
 
   private handleKill = (): void => {

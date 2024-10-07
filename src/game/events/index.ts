@@ -25,9 +25,9 @@ export type MoveEvent = ActorEvent<{
 
 export type AttackInputEvent = ActorEvent<{ x: number, y: number }>;
 export type AttackEvent = ActorEvent<{ x: number, y: number }>;
-export type DamageEvent = ActorEvent<{ value: number, actor?: Actor }>;
+export type DamageEvent = ActorEvent<{ value: number, actor?: Actor, keepAlive?: boolean }>;
 export type ProvokeEvent = ActorEvent<{ actor: Actor }>;
-export type KillEvent = ActorEvent<{ force?: boolean }>;
+export type KillEvent = ActorEvent<{ force?: boolean, keepAlive?: boolean }>;
 export type UpgradeTowerEvent = ActorEvent<{ cost: number, weapon: Record<string, number> }>;
 export type AddEffectEvent = ActorEvent<{
   id: string

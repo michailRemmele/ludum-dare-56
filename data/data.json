@@ -3737,7 +3737,7 @@
             "src": "house.png",
             "width": 144,
             "height": 168,
-            "slice": 1,
+            "slice": 2,
             "rotation": 0,
             "sortCenter": [
               0,
@@ -3762,7 +3762,7 @@
           "config": {
             "type": "boxCollider",
             "collider": {
-              "sizeX": 96,
+              "sizeX": 104,
               "sizeY": 136,
               "centerX": 0,
               "centerY": 0
@@ -3785,6 +3785,82 @@
           "name": "Health",
           "config": {
             "points": 100
+          }
+        },
+        {
+          "name": "Animatable",
+          "config": {
+            "initialState": "c2cdbeb9-d38a-48e1-84ac-f285c2dfcc15",
+            "states": [
+              {
+                "id": "c2cdbeb9-d38a-48e1-84ac-f285c2dfcc15",
+                "name": "Idle",
+                "type": "individual",
+                "speed": 1,
+                "timeline": {
+                  "frames": [
+                    {
+                      "id": "94580fac-ddaa-4a2c-a42a-c7cea7dfa06c",
+                      "fields": [
+                        {
+                          "id": "64ff9178-4f4e-48ca-a64e-99de45873748",
+                          "name": "components.Sprite.currentFrame",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "looped": false
+                },
+                "transitions": [
+                  {
+                    "id": "471c712c-1e04-48df-8803-e4ebbaceee92",
+                    "state": "141203f4-4ad4-4443-aee2-796a801f59ee",
+                    "time": 0,
+                    "conditions": [
+                      {
+                        "id": "09718184-5264-4fc4-9eb9-03bf199b6cf7",
+                        "type": "event",
+                        "props": {
+                          "eventType": "Damage"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "141203f4-4ad4-4443-aee2-796a801f59ee",
+                "name": "Damage",
+                "type": "individual",
+                "speed": 1,
+                "timeline": {
+                  "frames": [
+                    {
+                      "id": "94580fac-ddaa-4a2c-a42a-c7cea7dfa06c",
+                      "fields": [
+                        {
+                          "id": "64ff9178-4f4e-48ca-a64e-99de45873748",
+                          "name": "components.Sprite.currentFrame",
+                          "type": "number",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "looped": false
+                },
+                "transitions": [
+                  {
+                    "id": "d156bbb5-1056-47de-8981-f7b7074f4bfd",
+                    "state": "c2cdbeb9-d38a-48e1-84ac-f285c2dfcc15",
+                    "time": 1,
+                    "conditions": []
+                  }
+                ]
+              }
+            ]
           }
         }
       ],
