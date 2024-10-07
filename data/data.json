@@ -2894,7 +2894,7 @@
               "name": "Transform",
               "config": {
                 "offsetX": 36,
-                "offsetY": 72,
+                "offsetY": 84,
                 "offsetZ": 0,
                 "rotation": 0,
                 "scaleX": 1,
@@ -2933,7 +2933,7 @@
             {
               "name": "Transform",
               "config": {
-                "offsetX": 60,
+                "offsetX": 84,
                 "offsetY": 12,
                 "offsetZ": 0,
                 "rotation": 0,
@@ -3143,6 +3143,111 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "003b4fad-3e12-40b0-bda4-93ab1e3a9c58",
+          "templateId": "e54cd27a-e9f5-4f8c-b829-8300f998d504",
+          "fromTemplate": true,
+          "name": "Construction Spot 4",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 36,
+                "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "8e4f44dd-5341-42c4-8962-09ac0d0e406a",
+          "templateId": "f96fb7ac-047c-4005-87e3-ca157cb8bddb",
+          "fromTemplate": true,
+          "name": "Island",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 36,
+                "offsetY": 36,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            }
+          ],
+          "children": [
+            {
+              "id": "32d52d56-5dd1-4b1b-b2f8-58a08fa6949d",
+              "templateId": "3f77c07a-5b4b-46f2-8cc4-e3f319f733a1",
+              "fromTemplate": true,
+              "name": "Top Side",
+              "components": [],
+              "children": []
+            },
+            {
+              "id": "f9c5c8e7-7258-4d0d-99cf-8562c856395e",
+              "templateId": "08319188-87ff-43d4-9c4d-58b67f2a29f0",
+              "fromTemplate": true,
+              "name": "Top Side copy",
+              "components": [],
+              "children": []
+            },
+            {
+              "id": "5593da59-a3d8-47a8-97d3-0a04303c7dea",
+              "templateId": "92d27709-9a48-4c82-a556-18be5e40065d",
+              "fromTemplate": true,
+              "name": "Bottom Side copy",
+              "components": [],
+              "children": []
+            },
+            {
+              "id": "fbc55953-8853-4b18-989a-92f8d986bc88",
+              "templateId": "4e7be659-4bfd-40bb-8dbb-98175e4365a4",
+              "fromTemplate": true,
+              "name": "Left Side copy",
+              "components": [],
+              "children": []
+            },
+            {
+              "id": "da9776af-dad4-4e35-b585-85682dee15fa",
+              "templateId": "e0d03348-ded1-484c-b3a8-96f60b58c690",
+              "fromTemplate": true,
+              "name": "Right Side copy",
+              "components": [],
+              "children": []
+            },
+            {
+              "id": "24ad990d-0ba0-47da-bff2-bc72bdffc41d",
+              "templateId": "a420cb69-f753-4b2c-be46-f9bddf073fff",
+              "fromTemplate": true,
+              "name": "Top Left Corner copy",
+              "components": [],
+              "children": []
+            },
+            {
+              "id": "04c03f16-f4de-42b1-a330-25393f756a48",
+              "templateId": "995a5b3a-fb9f-45a9-b531-e521c64d0951",
+              "fromTemplate": true,
+              "name": "Top Left Corner copy",
+              "components": [],
+              "children": []
+            },
+            {
+              "id": "37b99a8e-5b57-48e9-baab-c675fc2c5466",
+              "templateId": "226abab8-6d08-4a9b-aa24-e83e9d706c01",
+              "fromTemplate": true,
+              "name": "Top Left Corner copy",
+              "components": [],
+              "children": []
+            }
+          ]
         }
       ]
     }
@@ -7151,6 +7256,447 @@
         }
       ],
       "children": []
+    },
+    {
+      "id": "239fa626-0e56-4338-9184-2d9c6416ee0a",
+      "name": "Green Ground",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "decorations",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#669933",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "f96fb7ac-047c-4005-87e3-ca157cb8bddb",
+      "name": "Island",
+      "components": [
+        {
+          "name": "Transform",
+          "config": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "rotation": 0,
+            "scaleX": 1,
+            "scaleY": 1
+          }
+        },
+        {
+          "name": "Sprite",
+          "config": {
+            "src": "",
+            "width": 24,
+            "height": 24,
+            "slice": 1,
+            "rotation": 0,
+            "sortCenter": [
+              0,
+              0
+            ],
+            "flipX": false,
+            "flipY": false,
+            "sortingLayer": "tracks",
+            "fit": "stretch",
+            "material": {
+              "type": "basic",
+              "options": {
+                "blending": "normal",
+                "color": "#669933",
+                "opacity": 1
+              }
+            }
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": "3f77c07a-5b4b-46f2-8cc4-e3f319f733a1",
+          "name": "Top Side",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": -24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "pond/pond_side_1_v.png",
+                "width": 24,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "tracks",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "08319188-87ff-43d4-9c4d-58b67f2a29f0",
+          "name": "Bottom Side",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 0,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "pond/pond_side_1_v.png",
+                "width": 24,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "tracks",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "92d27709-9a48-4c82-a556-18be5e40065d",
+          "name": "Left Side",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 24,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "pond/pond_side_1.png",
+                "width": 24,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "tracks",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4e7be659-4bfd-40bb-8dbb-98175e4365a4",
+          "name": "Right Side",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -24,
+                "offsetY": 0,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "pond/pond_side_1.png",
+                "width": 24,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "tracks",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e0d03348-ded1-484c-b3a8-96f60b58c690",
+          "name": "Top Left Corner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -24,
+                "offsetY": -24,
+                "offsetZ": 0,
+                "rotation": 270,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "pond/pond_outer_corner.png",
+                "width": 24,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "tracks",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a420cb69-f753-4b2c-be46-f9bddf073fff",
+          "name": "Top Right Corner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 24,
+                "offsetY": -24,
+                "offsetZ": 0,
+                "rotation": 0,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "pond/pond_outer_corner.png",
+                "width": 24,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "tracks",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "995a5b3a-fb9f-45a9-b531-e521c64d0951",
+          "name": "Bottom Left Corner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": -24,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 180,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "pond/pond_outer_corner.png",
+                "width": 24,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "tracks",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "226abab8-6d08-4a9b-aa24-e83e9d706c01",
+          "name": "Bottom Right Corner",
+          "components": [
+            {
+              "name": "Transform",
+              "config": {
+                "offsetX": 24,
+                "offsetY": 24,
+                "offsetZ": 0,
+                "rotation": 90,
+                "scaleX": 1,
+                "scaleY": 1
+              }
+            },
+            {
+              "name": "Sprite",
+              "config": {
+                "src": "pond/pond_outer_corner.png",
+                "width": 24,
+                "height": 24,
+                "slice": 1,
+                "rotation": 0,
+                "sortCenter": [
+                  0,
+                  0
+                ],
+                "flipX": false,
+                "flipY": false,
+                "sortingLayer": "tracks",
+                "fit": "stretch",
+                "material": {
+                  "type": "basic",
+                  "options": {
+                    "blending": "normal",
+                    "color": "#fff",
+                    "opacity": 1
+                  }
+                }
+              }
+            }
+          ],
+          "children": []
+        }
+      ]
     }
   ],
   "loaders": [],
