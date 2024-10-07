@@ -70,11 +70,17 @@ export class ScenarioSystem extends System {
 
   mount(): void {
     this.scene.addEventListener(EventType.EnemyDeath, this.handleDeathEnemy);
+    this.scene.addEventListener(EventType.GameOver, this.handleGameOver);
   }
 
   unmount(): void {
     this.scene.removeEventListener(EventType.EnemyDeath, this.handleDeathEnemy);
+    this.scene.removeEventListener(EventType.GameOver, this.handleGameOver);
   }
+
+  private handleGameOver = (): void => {
+    this.isSpawnEnd = true;
+  };
 
   private handleDeathEnemy = (): void => {
     this.enemiesLeft -= 1;
@@ -84,7 +90,7 @@ export class ScenarioSystem extends System {
       this.timeout = WAVE_TIMEOUT;
     }
 
-    if (this.enemiesLeft === 0) {
+    if (this.enemiesLeft === 0 && !this.isSpawnEnd) {
       this.isSpawnEnd = true;
       this.scene.dispatchEvent(EventType.GameOver, { isWin: true });
     }
