@@ -4,3 +4,18 @@
 
   color: white;
 }
+
+.money-bar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.money-bar__inner img {
+  width: 50px;
+  height: 42px;
+}
+
+.money-bar__value {
+  padding-left: 10px;
+}
