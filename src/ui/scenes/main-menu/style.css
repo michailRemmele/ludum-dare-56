@@ -7,6 +7,31 @@
   justify-content: center;
   flex-direction: column;
 
-  background-color: #336633;
+  background: url('./images/menu-bg.png') repeat #669933;
+  background-size: 500px;
+  image-rendering: pixelated;
   color: white;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.main-menu__logo {
+  position: relative;
+  animation: slide 2s linear infinite alternate;
+
+  image-rendering: pixelated;
+  margin-bottom: 24px;
+
+  width: 480px;
+
+  @media screen and (max-height: 481px), screen and (max-width: 768px) {
+    width: 240px;
+  }
 }

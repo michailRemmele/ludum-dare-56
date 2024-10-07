@@ -11,11 +11,22 @@
   align-items: center;
 }
 
-.money-bar__inner img {
-  width: 50px;
-  height: 42px;
+.money-bar__icon {
+  width: 64px;
+  image-rendering: pixelated;
 }
 
 .money-bar__value {
   padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .money-bar {
+    font-size: 32px;
+  }
+
+  .money-bar__icon {
+    width: 56px;
+    image-rendering: pixelated;
+  }
 }
