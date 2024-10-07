@@ -70,9 +70,7 @@ export class MovementSystem extends System {
       transform.offsetX += direction.x * speed * deltaTimeInSeconds;
       transform.offsetY += direction.y * speed * deltaTimeInSeconds;
     });
-  }
 
-  update(): void {
     this.actorCollection.forEach((actor) => {
       const movement = actor.getComponent(Movement);
       const { direction, isMoving } = movement;
