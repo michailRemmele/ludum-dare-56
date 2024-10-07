@@ -9,6 +9,7 @@ import {
   PlayerScript,
   BaseScript,
   SpotScript,
+  BackgroundScript,
 } from '../../../src/game/scripts';
 import { } from '../../../src/game/effects';
 
@@ -19,6 +20,7 @@ import {
   playerScript,
   baseScript,
   spotScript,
+  backgroundScript,
 } from './script-system';
 import { freezeScript } from './effects-system';
 
@@ -30,6 +32,7 @@ export const resourcesSchema = {
     [PlayerScript.scriptName]: playerScript,
     [BaseScript.scriptName]: baseScript,
     [SpotScript.scriptName]: spotScript,
+    [BackgroundScript.scriptName]: backgroundScript,
   },
   [EffectsSystem.systemName]: {
     freeze: freezeScript,

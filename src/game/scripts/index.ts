@@ -4,3 +4,4 @@ export { DeathTrackerScript } from './death-tracker-script';
 export { PlayerScript } from './player-script';
 export { BaseScript } from './base-script';
 export { SpotScript } from './spot-script';
+export { BackgroundScript } from './background-script';

@@ -136,6 +136,30 @@
                   }
                 }
               }
+            },
+            {
+              "name": "ScriptBundle",
+              "config": {
+                "scripts": [
+                  {
+                    "id": "699f4d53-31df-474a-92d2-16ce094fba1a",
+                    "name": "BackgroundScript",
+                    "options": {}
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ColliderContainer",
+              "config": {
+                "type": "boxCollider",
+                "collider": {
+                  "sizeX": 384,
+                  "sizeY": 384,
+                  "centerX": 0,
+                  "centerY": 0
+                }
+              }
             }
           ],
           "children": []
@@ -984,6 +1008,30 @@
                     "color": "#669933",
                     "opacity": 1
                   }
+                }
+              }
+            },
+            {
+              "name": "ScriptBundle",
+              "config": {
+                "scripts": [
+                  {
+                    "id": "8aadada7-a9e5-4e82-8358-bca671bf3e15",
+                    "name": "BackgroundScript",
+                    "options": {}
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ColliderContainer",
+              "config": {
+                "type": "boxCollider",
+                "collider": {
+                  "sizeX": 384,
+                  "sizeY": 384,
+                  "centerX": 0,
+                  "centerY": 0
                 }
               }
             }
@@ -1924,6 +1972,30 @@
                     "color": "#669933",
                     "opacity": 1
                   }
+                }
+              }
+            },
+            {
+              "name": "ScriptBundle",
+              "config": {
+                "scripts": [
+                  {
+                    "id": "09b20b88-65ca-4f01-a7ad-34bd1f16c746",
+                    "name": "BackgroundScript",
+                    "options": {}
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ColliderContainer",
+              "config": {
+                "type": "boxCollider",
+                "collider": {
+                  "sizeX": 384,
+                  "sizeY": 384,
+                  "centerX": 0,
+                  "centerY": 0
                 }
               }
             }
