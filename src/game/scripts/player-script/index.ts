@@ -23,7 +23,7 @@ import type {
 } from '../../events';
 
 const MONEY_PER_ENEMY = 10;
-const VIEWPORT_SIZE = 480;
+const VIEWPORT_SIZE = 384;
 
 export class PlayerScript extends Script {
   private actor: Actor;

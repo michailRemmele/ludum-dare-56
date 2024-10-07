@@ -5,8 +5,7 @@ import {
   useEffect,
 } from 'react';
 import type { FC, MouseEventHandler } from 'react';
-import { SpriteRendererService } from 'remiz';
-import type { Actor } from 'remiz';
+import { SpriteRendererService, Actor } from 'remiz';
 
 import {
   Money,
@@ -139,14 +138,24 @@ export const ConstructionMenu: FC = () => {
 
     const rendererService = scene.getService(SpriteRendererService);
     const spot = rendererService.intersectsWithPoint(clientX, clientY)
-      .find((actor) => actor.templateId && SPOTS.includes(actor.templateId));
+      .find((actor) => {
+        if (!actor.templateId) {
+          return false;
+        }
+        if (SPOTS.includes(actor.templateId)) {
+          return true;
+        }
+
+        const { parent } = actor;
+        return parent instanceof Actor && parent.templateId && SPOTS.includes(parent.templateId);
+      });
 
     if (!spot) {
       return;
     }
 
     spot.dispatchEvent(EventType.Select);
-    setSelectedSpot(spot);
+    setSelectedSpot(spot.parent instanceof Actor ? spot.parent : spot);
   };
 
   const handleBuild = (tower: Tower): void => {

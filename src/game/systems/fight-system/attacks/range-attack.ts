@@ -25,6 +25,8 @@ import { findTeam } from '../utils/find-team';
 
 import type { Attack } from './attack';
 
+const HEAD_PLACEMENT_FIX = 22;
+
 export class RangeAttack implements Attack {
   private actor: Actor;
   private spawner: ActorSpawner;
@@ -60,7 +62,7 @@ export class RangeAttack implements Attack {
     shotCollider.radius = projectileRadius;
 
     shotTransform.offsetX = offsetX;
-    shotTransform.offsetY = offsetY;
+    shotTransform.offsetY = offsetY - HEAD_PLACEMENT_FIX;
     shotTransform.rotation = MathOps.radToDeg(this.angle);
 
     this.scene.appendChild(shot);
