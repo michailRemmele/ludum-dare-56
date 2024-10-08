@@ -7,11 +7,13 @@ import { RemoveActor, RemoveActorEvent } from 'remiz/events';
 import { TrackSegment, Movement } from '../../components';
 import * as EventType from '../../events';
 
+const DESTINATION_THRESOLD = 4;
+
 export class TrackSystem extends System {
   private segmentsCollection: ActorCollection;
   private movementCollection: ActorCollection;
 
-  private angles: Record<Actor['id'], number>;
+  private destinations: Record<Actor['id'], [number, number]>;
   private passes: Record<Actor['id'], Set<Actor['id']>>;
 
   constructor(options: SystemOptions) {
@@ -27,12 +29,12 @@ export class TrackSystem extends System {
       components: [Movement],
     });
 
-    this.angles = {};
+    this.destinations = {};
     this.passes = {};
   }
 
   private handleRemoveActor = (event: RemoveActorEvent): void => {
-    delete this.angles[event.actor.id];
+    delete this.destinations[event.actor.id];
   };
 
   mount(): void {
@@ -42,7 +44,25 @@ export class TrackSystem extends System {
     );
   }
 
-  fixedUpdate(): void {
+  private getMovementAngle(actor: Actor): number | undefined {
+    if (!this.destinations[actor.id]) {
+      return undefined;
+    }
+
+    const { offsetX, offsetY } = actor.getComponent(Transform);
+    const [destX, destY] = this.destinations[actor.id];
+
+    return MathOps.radToDeg(
+      MathOps.getAngleBetweenTwoPoints(
+        offsetX,
+        destX,
+        offsetY,
+        destY,
+      ),
+    ) - 180;
+  }
+
+  update(): void {
     const segments: (Pick<Transform, 'offsetX' | 'offsetY'> &
     Pick<TrackSegment, 'next'> &
     Pick<Actor, 'id'>)[] = [];
@@ -60,8 +80,16 @@ export class TrackSystem extends System {
       const transform = actor.getComponent(Transform);
 
       const intersectedSegment = segments.find(
-        (segment) => Math.abs(segment.offsetX - transform.offsetX) < 1
-          && Math.abs(segment.offsetY - transform.offsetY) < 1,
+        (segment) => {
+          const distance = MathOps.getDistanceBetweenTwoPoints(
+            transform.offsetX,
+            segment.offsetX,
+            transform.offsetY,
+            segment.offsetY,
+          );
+
+          return distance < DESTINATION_THRESOLD;
+        },
       );
 
       if (intersectedSegment) {
@@ -79,26 +107,21 @@ export class TrackSystem extends System {
 
         const { offsetX, offsetY } = nextSegment.getComponent(Transform);
 
-        const angle = MathOps.radToDeg(
-          MathOps.getAngleBetweenTwoPoints(
-            intersectedSegment.offsetX,
-            offsetX,
-            intersectedSegment.offsetY,
-            offsetY,
-          ),
-        ) - 180;
-        this.angles[actor.id] = angle;
-
-        actor.dispatchEvent(EventType.Movement, { angle });
+        this.destinations[actor.id] = [offsetX, offsetY];
+        const angle = this.getMovementAngle(actor);
+        if (angle !== undefined) {
+          actor.dispatchEvent(EventType.Movement, { angle });
+        }
 
         this.passes[intersectedSegment.id].add(actor.id);
 
         return;
       }
 
-      actor.dispatchEvent(EventType.Movement, {
-        angle: this.angles[actor.id],
-      });
+      const angle = this.getMovementAngle(actor);
+      if (angle !== undefined) {
+        actor.dispatchEvent(EventType.Movement, { angle });
+      }
     });
   }
 }
